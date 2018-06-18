@@ -1,0 +1,934 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D19757520D86481005512BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D19757420D86481005512BD /* AppDelegate.swift */; };
+		2D19757720D86481005512BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D19757620D86481005512BD /* ViewController.swift */; };
+		2D19757A20D86481005512BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D19757820D86481005512BD /* Main.storyboard */; };
+		2D19757C20D86483005512BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D19757B20D86483005512BD /* Assets.xcassets */; };
+		2D19757F20D86483005512BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D19757D20D86483005512BD /* LaunchScreen.storyboard */; };
+		2D19758A20D86483005512BD /* MoniTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D19758920D86483005512BD /* MoniTests.swift */; };
+		2D19759520D86483005512BD /* MoniUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D19759420D86483005512BD /* MoniUITests.swift */; };
+		2D1975AC20D865FD005512BD /* CardsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975AB20D865FD005512BD /* CardsRepository.swift */; };
+		2D1975B520D86657005512BD /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975B420D86657005512BD /* CardsViewController.swift */; };
+		2D1975B720D86660005512BD /* CardsViewController+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975B620D86660005512BD /* CardsViewController+Layout.swift */; };
+		2D1975B920D8666C005512BD /* CardsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975B820D8666C005512BD /* CardsPresenter.swift */; };
+		2D1975BB20D86676005512BD /* CardsPresenterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975BA20D86676005512BD /* CardsPresenterContract.swift */; };
+		2D1975BD20D86681005512BD /* CardsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975BC20D86681005512BD /* CardsInteractor.swift */; };
+		2D1975BF20D8668B005512BD /* CardsInterctorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975BE20D8668B005512BD /* CardsInterctorContract.swift */; };
+		2D1975C120D86694005512BD /* CardsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975C020D86694005512BD /* CardsRouter.swift */; };
+		2D1975C320D8669B005512BD /* CardsRouterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975C220D8669B005512BD /* CardsRouterContract.swift */; };
+		2D1975C620D866B7005512BD /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975C520D866B7005512BD /* CardCollectionViewCell.swift */; };
+		2D1975C820D866C7005512BD /* MoneyToPayRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975C720D866C7005512BD /* MoneyToPayRouter.swift */; };
+		2D1975CA20D866CE005512BD /* MoneyToPayRouterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975C920D866CE005512BD /* MoneyToPayRouterContract.swift */; };
+		2D1975CC20D866D9005512BD /* MoneyToPayInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975CB20D866D9005512BD /* MoneyToPayInteractor.swift */; };
+		2D1975CE20D866E0005512BD /* MoneyToPayInteractorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975CD20D866E0005512BD /* MoneyToPayInteractorContract.swift */; };
+		2D1975D020D866E9005512BD /* MoneyToPayPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975CF20D866E9005512BD /* MoneyToPayPresenter.swift */; };
+		2D1975D220D866F4005512BD /* MoneyToPayPresenterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975D120D866F4005512BD /* MoneyToPayPresenterContract.swift */; };
+		2D1975D420D866FF005512BD /* MoneyToPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975D320D866FF005512BD /* MoneyToPayViewController.swift */; };
+		2D1975D620D86706005512BD /* MoneyToPayViewController+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975D520D86706005512BD /* MoneyToPayViewController+Layout.swift */; };
+		2D1975DD20D8676B005512BD /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975DC20D8676B005512BD /* AddCardViewController.swift */; };
+		2D1975DF20D86773005512BD /* AddCardViewController+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975DE20D86773005512BD /* AddCardViewController+Layout.swift */; };
+		2D1975E120D8677D005512BD /* AddCardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975E020D8677D005512BD /* AddCardPresenter.swift */; };
+		2D1975E320D86787005512BD /* AddCardPresenterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975E220D86787005512BD /* AddCardPresenterContract.swift */; };
+		2D1975E520D86793005512BD /* AddCardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975E420D86793005512BD /* AddCardInteractor.swift */; };
+		2D1975E720D8679A005512BD /* AddCardInteractorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975E620D8679A005512BD /* AddCardInteractorContract.swift */; };
+		2D1975E920D867A5005512BD /* AddCardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975E820D867A5005512BD /* AddCardRouter.swift */; };
+		2D1975EB20D867AB005512BD /* AddCardRouterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975EA20D867AB005512BD /* AddCardRouterContract.swift */; };
+		2D1975ED20D867B5005512BD /* AddCardConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975EC20D867B5005512BD /* AddCardConfigurator.swift */; };
+		2D1975EF20D867C6005512BD /* MoneyToPayConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975EE20D867C6005512BD /* MoneyToPayConfigurator.swift */; };
+		2D1975F120D867DE005512BD /* CardsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975F020D867DE005512BD /* CardsConfigurator.swift */; };
+		CC04F47D6FE2F6714A18E9BD /* Pods_Moni.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 663248890929A281B7332E7F /* Pods_Moni.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D19758620D86483005512BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D19756920D86481005512BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D19757020D86481005512BD;
+			remoteInfo = Moni;
+		};
+		2D19759120D86483005512BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D19756920D86481005512BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D19757020D86481005512BD;
+			remoteInfo = Moni;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D19757120D86481005512BD /* Moni.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moni.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D19757420D86481005512BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2D19757620D86481005512BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2D19757920D86481005512BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2D19757B20D86483005512BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D19757E20D86483005512BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D19758020D86483005512BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D19758520D86483005512BD /* MoniTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoniTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D19758920D86483005512BD /* MoniTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoniTests.swift; sourceTree = "<group>"; };
+		2D19758B20D86483005512BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D19759020D86483005512BD /* MoniUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoniUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D19759420D86483005512BD /* MoniUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoniUITests.swift; sourceTree = "<group>"; };
+		2D19759620D86483005512BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D1975AB20D865FD005512BD /* CardsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsRepository.swift; sourceTree = "<group>"; };
+		2D1975B420D86657005512BD /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		2D1975B620D86660005512BD /* CardsViewController+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardsViewController+Layout.swift"; sourceTree = "<group>"; };
+		2D1975B820D8666C005512BD /* CardsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsPresenter.swift; sourceTree = "<group>"; };
+		2D1975BA20D86676005512BD /* CardsPresenterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsPresenterContract.swift; sourceTree = "<group>"; };
+		2D1975BC20D86681005512BD /* CardsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsInteractor.swift; sourceTree = "<group>"; };
+		2D1975BE20D8668B005512BD /* CardsInterctorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsInterctorContract.swift; sourceTree = "<group>"; };
+		2D1975C020D86694005512BD /* CardsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsRouter.swift; sourceTree = "<group>"; };
+		2D1975C220D8669B005512BD /* CardsRouterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsRouterContract.swift; sourceTree = "<group>"; };
+		2D1975C520D866B7005512BD /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		2D1975C720D866C7005512BD /* MoneyToPayRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyToPayRouter.swift; sourceTree = "<group>"; };
+		2D1975C920D866CE005512BD /* MoneyToPayRouterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyToPayRouterContract.swift; sourceTree = "<group>"; };
+		2D1975CB20D866D9005512BD /* MoneyToPayInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyToPayInteractor.swift; sourceTree = "<group>"; };
+		2D1975CD20D866E0005512BD /* MoneyToPayInteractorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyToPayInteractorContract.swift; sourceTree = "<group>"; };
+		2D1975CF20D866E9005512BD /* MoneyToPayPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyToPayPresenter.swift; sourceTree = "<group>"; };
+		2D1975D120D866F4005512BD /* MoneyToPayPresenterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyToPayPresenterContract.swift; sourceTree = "<group>"; };
+		2D1975D320D866FF005512BD /* MoneyToPayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyToPayViewController.swift; sourceTree = "<group>"; };
+		2D1975D520D86706005512BD /* MoneyToPayViewController+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoneyToPayViewController+Layout.swift"; sourceTree = "<group>"; };
+		2D1975DC20D8676B005512BD /* AddCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
+		2D1975DE20D86773005512BD /* AddCardViewController+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddCardViewController+Layout.swift"; sourceTree = "<group>"; };
+		2D1975E020D8677D005512BD /* AddCardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardPresenter.swift; sourceTree = "<group>"; };
+		2D1975E220D86787005512BD /* AddCardPresenterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardPresenterContract.swift; sourceTree = "<group>"; };
+		2D1975E420D86793005512BD /* AddCardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardInteractor.swift; sourceTree = "<group>"; };
+		2D1975E620D8679A005512BD /* AddCardInteractorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardInteractorContract.swift; sourceTree = "<group>"; };
+		2D1975E820D867A5005512BD /* AddCardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardRouter.swift; sourceTree = "<group>"; };
+		2D1975EA20D867AB005512BD /* AddCardRouterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardRouterContract.swift; sourceTree = "<group>"; };
+		2D1975EC20D867B5005512BD /* AddCardConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardConfigurator.swift; sourceTree = "<group>"; };
+		2D1975EE20D867C6005512BD /* MoneyToPayConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyToPayConfigurator.swift; sourceTree = "<group>"; };
+		2D1975F020D867DE005512BD /* CardsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsConfigurator.swift; sourceTree = "<group>"; };
+		663248890929A281B7332E7F /* Pods_Moni.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moni.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB997935F3EDE3162BC31136 /* Pods-Moni.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moni.release.xcconfig"; path = "Pods/Target Support Files/Pods-Moni/Pods-Moni.release.xcconfig"; sourceTree = "<group>"; };
+		ECF3B01C7BC6459B899E241F /* Pods-Moni.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moni.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Moni/Pods-Moni.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D19756E20D86481005512BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC04F47D6FE2F6714A18E9BD /* Pods_Moni.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D19758220D86483005512BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D19758D20D86483005512BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23F2BB39759538357747F15B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				663248890929A281B7332E7F /* Pods_Moni.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D19756820D86481005512BD = {
+			isa = PBXGroup;
+			children = (
+				2D19757320D86481005512BD /* Moni */,
+				2D19758820D86483005512BD /* MoniTests */,
+				2D19759320D86483005512BD /* MoniUITests */,
+				2D19757220D86481005512BD /* Products */,
+				6397489BE9607F23C6F2520D /* Pods */,
+				23F2BB39759538357747F15B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2D19757220D86481005512BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D19757120D86481005512BD /* Moni.app */,
+				2D19758520D86483005512BD /* MoniTests.xctest */,
+				2D19759020D86483005512BD /* MoniUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D19757320D86481005512BD /* Moni */ = {
+			isa = PBXGroup;
+			children = (
+				2D1975B120D86624005512BD /* SupportingFiles */,
+				2D1975A920D865E3005512BD /* Repository */,
+				2D1975A220D865AC005512BD /* Module */,
+				2D19757420D86481005512BD /* AppDelegate.swift */,
+				2D19757620D86481005512BD /* ViewController.swift */,
+			);
+			path = Moni;
+			sourceTree = "<group>";
+		};
+		2D19758820D86483005512BD /* MoniTests */ = {
+			isa = PBXGroup;
+			children = (
+				2D19758920D86483005512BD /* MoniTests.swift */,
+				2D19758B20D86483005512BD /* Info.plist */,
+			);
+			path = MoniTests;
+			sourceTree = "<group>";
+		};
+		2D19759320D86483005512BD /* MoniUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2D19759420D86483005512BD /* MoniUITests.swift */,
+				2D19759620D86483005512BD /* Info.plist */,
+			);
+			path = MoniUITests;
+			sourceTree = "<group>";
+		};
+		2D1975A220D865AC005512BD /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				2D1975A420D865BA005512BD /* MoneyToPay */,
+				2D1975D720D86732005512BD /* AddCard */,
+				2D1975A320D865B3005512BD /* Cards */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		2D1975A320D865B3005512BD /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				2D1975A820D865DD005512BD /* Router */,
+				2D1975A720D865D7005512BD /* Interactor */,
+				2D1975A620D865D0005512BD /* Presenter */,
+				2D1975A520D865CB005512BD /* View */,
+				2D1975F020D867DE005512BD /* CardsConfigurator.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		2D1975A420D865BA005512BD /* MoneyToPay */ = {
+			isa = PBXGroup;
+			children = (
+				2D1975B020D86617005512BD /* Router */,
+				2D1975AF20D86612005512BD /* Interactor */,
+				2D1975AE20D8660D005512BD /* Presenter */,
+				2D1975AD20D86605005512BD /* View */,
+				2D1975EE20D867C6005512BD /* MoneyToPayConfigurator.swift */,
+			);
+			path = MoneyToPay;
+			sourceTree = "<group>";
+		};
+		2D1975A520D865CB005512BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2D1975B320D8664B005512BD /* Components */,
+				2D1975B420D86657005512BD /* CardsViewController.swift */,
+				2D1975B620D86660005512BD /* CardsViewController+Layout.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2D1975A620D865D0005512BD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2D1975B820D8666C005512BD /* CardsPresenter.swift */,
+				2D1975BA20D86676005512BD /* CardsPresenterContract.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2D1975A720D865D7005512BD /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2D1975BC20D86681005512BD /* CardsInteractor.swift */,
+				2D1975BE20D8668B005512BD /* CardsInterctorContract.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2D1975A820D865DD005512BD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2D1975C020D86694005512BD /* CardsRouter.swift */,
+				2D1975C220D8669B005512BD /* CardsRouterContract.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2D1975A920D865E3005512BD /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				2D1975AA20D865ED005512BD /* Cards */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		2D1975AA20D865ED005512BD /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				2D1975AB20D865FD005512BD /* CardsRepository.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		2D1975AD20D86605005512BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2D1975D320D866FF005512BD /* MoneyToPayViewController.swift */,
+				2D1975D520D86706005512BD /* MoneyToPayViewController+Layout.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2D1975AE20D8660D005512BD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2D1975CF20D866E9005512BD /* MoneyToPayPresenter.swift */,
+				2D1975D120D866F4005512BD /* MoneyToPayPresenterContract.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2D1975AF20D86612005512BD /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2D1975CB20D866D9005512BD /* MoneyToPayInteractor.swift */,
+				2D1975CD20D866E0005512BD /* MoneyToPayInteractorContract.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2D1975B020D86617005512BD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2D1975C720D866C7005512BD /* MoneyToPayRouter.swift */,
+				2D1975C920D866CE005512BD /* MoneyToPayRouterContract.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2D1975B120D86624005512BD /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2D19757820D86481005512BD /* Main.storyboard */,
+				2D19757B20D86483005512BD /* Assets.xcassets */,
+				2D19757D20D86483005512BD /* LaunchScreen.storyboard */,
+				2D19758020D86483005512BD /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		2D1975B320D8664B005512BD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2D1975C520D866B7005512BD /* CardCollectionViewCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2D1975D720D86732005512BD /* AddCard */ = {
+			isa = PBXGroup;
+			children = (
+				2D1975DB20D86757005512BD /* Router */,
+				2D1975DA20D86751005512BD /* Interactor */,
+				2D1975D920D8674B005512BD /* Presenter */,
+				2D1975D820D86745005512BD /* View */,
+				2D1975EC20D867B5005512BD /* AddCardConfigurator.swift */,
+			);
+			path = AddCard;
+			sourceTree = "<group>";
+		};
+		2D1975D820D86745005512BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2D1975DC20D8676B005512BD /* AddCardViewController.swift */,
+				2D1975DE20D86773005512BD /* AddCardViewController+Layout.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2D1975D920D8674B005512BD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2D1975E020D8677D005512BD /* AddCardPresenter.swift */,
+				2D1975E220D86787005512BD /* AddCardPresenterContract.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2D1975DA20D86751005512BD /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2D1975E420D86793005512BD /* AddCardInteractor.swift */,
+				2D1975E620D8679A005512BD /* AddCardInteractorContract.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2D1975DB20D86757005512BD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2D1975E820D867A5005512BD /* AddCardRouter.swift */,
+				2D1975EA20D867AB005512BD /* AddCardRouterContract.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		6397489BE9607F23C6F2520D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECF3B01C7BC6459B899E241F /* Pods-Moni.debug.xcconfig */,
+				DB997935F3EDE3162BC31136 /* Pods-Moni.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D19757020D86481005512BD /* Moni */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D19759920D86483005512BD /* Build configuration list for PBXNativeTarget "Moni" */;
+			buildPhases = (
+				6F27677F05482218F1B6F41D /* [CP] Check Pods Manifest.lock */,
+				2D19756D20D86481005512BD /* Sources */,
+				2D19756E20D86481005512BD /* Frameworks */,
+				2D19756F20D86481005512BD /* Resources */,
+				5E51264757B24C0876AE5D47 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Moni;
+			productName = Moni;
+			productReference = 2D19757120D86481005512BD /* Moni.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D19758420D86483005512BD /* MoniTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D19759C20D86483005512BD /* Build configuration list for PBXNativeTarget "MoniTests" */;
+			buildPhases = (
+				2D19758120D86483005512BD /* Sources */,
+				2D19758220D86483005512BD /* Frameworks */,
+				2D19758320D86483005512BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D19758720D86483005512BD /* PBXTargetDependency */,
+			);
+			name = MoniTests;
+			productName = MoniTests;
+			productReference = 2D19758520D86483005512BD /* MoniTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2D19758F20D86483005512BD /* MoniUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D19759F20D86483005512BD /* Build configuration list for PBXNativeTarget "MoniUITests" */;
+			buildPhases = (
+				2D19758C20D86483005512BD /* Sources */,
+				2D19758D20D86483005512BD /* Frameworks */,
+				2D19758E20D86483005512BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D19759220D86483005512BD /* PBXTargetDependency */,
+			);
+			name = MoniUITests;
+			productName = MoniUITests;
+			productReference = 2D19759020D86483005512BD /* MoniUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D19756920D86481005512BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = DevSoul;
+				TargetAttributes = {
+					2D19757020D86481005512BD = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					2D19758420D86483005512BD = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 2D19757020D86481005512BD;
+					};
+					2D19758F20D86483005512BD = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 2D19757020D86481005512BD;
+					};
+				};
+			};
+			buildConfigurationList = 2D19756C20D86481005512BD /* Build configuration list for PBXProject "Moni" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D19756820D86481005512BD;
+			productRefGroup = 2D19757220D86481005512BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D19757020D86481005512BD /* Moni */,
+				2D19758420D86483005512BD /* MoniTests */,
+				2D19758F20D86483005512BD /* MoniUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D19756F20D86481005512BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D19757F20D86483005512BD /* LaunchScreen.storyboard in Resources */,
+				2D19757C20D86483005512BD /* Assets.xcassets in Resources */,
+				2D19757A20D86481005512BD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D19758320D86483005512BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D19758E20D86483005512BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E51264757B24C0876AE5D47 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Moni/Pods-Moni-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/ionicons/ionicons.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ionicons.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Moni/Pods-Moni-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F27677F05482218F1B6F41D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Moni-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D19756D20D86481005512BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D1975C820D866C7005512BD /* MoneyToPayRouter.swift in Sources */,
+				2D1975CA20D866CE005512BD /* MoneyToPayRouterContract.swift in Sources */,
+				2D1975ED20D867B5005512BD /* AddCardConfigurator.swift in Sources */,
+				2D1975E520D86793005512BD /* AddCardInteractor.swift in Sources */,
+				2D1975E320D86787005512BD /* AddCardPresenterContract.swift in Sources */,
+				2D1975BD20D86681005512BD /* CardsInteractor.swift in Sources */,
+				2D1975B520D86657005512BD /* CardsViewController.swift in Sources */,
+				2D19757720D86481005512BD /* ViewController.swift in Sources */,
+				2D1975AC20D865FD005512BD /* CardsRepository.swift in Sources */,
+				2D1975EB20D867AB005512BD /* AddCardRouterContract.swift in Sources */,
+				2D1975C620D866B7005512BD /* CardCollectionViewCell.swift in Sources */,
+				2D1975D020D866E9005512BD /* MoneyToPayPresenter.swift in Sources */,
+				2D1975CE20D866E0005512BD /* MoneyToPayInteractorContract.swift in Sources */,
+				2D1975CC20D866D9005512BD /* MoneyToPayInteractor.swift in Sources */,
+				2D1975DF20D86773005512BD /* AddCardViewController+Layout.swift in Sources */,
+				2D1975BF20D8668B005512BD /* CardsInterctorContract.swift in Sources */,
+				2D1975D420D866FF005512BD /* MoneyToPayViewController.swift in Sources */,
+				2D1975EF20D867C6005512BD /* MoneyToPayConfigurator.swift in Sources */,
+				2D1975BB20D86676005512BD /* CardsPresenterContract.swift in Sources */,
+				2D1975E920D867A5005512BD /* AddCardRouter.swift in Sources */,
+				2D1975B720D86660005512BD /* CardsViewController+Layout.swift in Sources */,
+				2D1975DD20D8676B005512BD /* AddCardViewController.swift in Sources */,
+				2D1975D220D866F4005512BD /* MoneyToPayPresenterContract.swift in Sources */,
+				2D1975B920D8666C005512BD /* CardsPresenter.swift in Sources */,
+				2D1975E720D8679A005512BD /* AddCardInteractorContract.swift in Sources */,
+				2D1975C320D8669B005512BD /* CardsRouterContract.swift in Sources */,
+				2D1975E120D8677D005512BD /* AddCardPresenter.swift in Sources */,
+				2D1975D620D86706005512BD /* MoneyToPayViewController+Layout.swift in Sources */,
+				2D1975F120D867DE005512BD /* CardsConfigurator.swift in Sources */,
+				2D1975C120D86694005512BD /* CardsRouter.swift in Sources */,
+				2D19757520D86481005512BD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D19758120D86483005512BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D19758A20D86483005512BD /* MoniTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D19758C20D86483005512BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D19759520D86483005512BD /* MoniUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D19758720D86483005512BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D19757020D86481005512BD /* Moni */;
+			targetProxy = 2D19758620D86483005512BD /* PBXContainerItemProxy */;
+		};
+		2D19759220D86483005512BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D19757020D86481005512BD /* Moni */;
+			targetProxy = 2D19759120D86483005512BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2D19757820D86481005512BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D19757920D86481005512BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2D19757D20D86483005512BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D19757E20D86483005512BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D19759720D86483005512BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2D19759820D86483005512BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D19759A20D86483005512BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECF3B01C7BC6459B899E241F /* Pods-Moni.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2QH2U923HT;
+				INFOPLIST_FILE = Moni/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.devsoul.Moni;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D19759B20D86483005512BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB997935F3EDE3162BC31136 /* Pods-Moni.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2QH2U923HT;
+				INFOPLIST_FILE = Moni/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.devsoul.Moni;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2D19759D20D86483005512BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3R7X3B75XU;
+				INFOPLIST_FILE = MoniTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.devsoul.MoniTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moni.app/Moni";
+			};
+			name = Debug;
+		};
+		2D19759E20D86483005512BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3R7X3B75XU;
+				INFOPLIST_FILE = MoniTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.devsoul.MoniTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moni.app/Moni";
+			};
+			name = Release;
+		};
+		2D1975A020D86483005512BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3R7X3B75XU;
+				INFOPLIST_FILE = MoniUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.devsoul.MoniUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Moni;
+			};
+			name = Debug;
+		};
+		2D1975A120D86483005512BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3R7X3B75XU;
+				INFOPLIST_FILE = MoniUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.devsoul.MoniUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Moni;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D19756C20D86481005512BD /* Build configuration list for PBXProject "Moni" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D19759720D86483005512BD /* Debug */,
+				2D19759820D86483005512BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D19759920D86483005512BD /* Build configuration list for PBXNativeTarget "Moni" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D19759A20D86483005512BD /* Debug */,
+				2D19759B20D86483005512BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D19759C20D86483005512BD /* Build configuration list for PBXNativeTarget "MoniTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D19759D20D86483005512BD /* Debug */,
+				2D19759E20D86483005512BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D19759F20D86483005512BD /* Build configuration list for PBXNativeTarget "MoniUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D1975A020D86483005512BD /* Debug */,
+				2D1975A120D86483005512BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D19756920D86481005512BD /* Project object */;
+}
