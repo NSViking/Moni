@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+extension MoneyToPayViewController {
+    
+    func setupUI() {
+        
+    }
+}

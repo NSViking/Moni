@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+class AddCardRouter: NSObject {
+    var viewController: AddCardViewController
+    
+    init(viewController: AddCardViewController) {
+        self.viewController = viewController
+    }
+}
+
+extension AddCardRouter: AddCardRouterContract {
+
+    func goBack() {
+        
+    }
+}

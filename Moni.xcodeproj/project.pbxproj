@@ -20,7 +20,7 @@
 		2D1975B920D8666C005512BD /* CardsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975B820D8666C005512BD /* CardsPresenter.swift */; };
 		2D1975BB20D86676005512BD /* CardsPresenterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975BA20D86676005512BD /* CardsPresenterContract.swift */; };
 		2D1975BD20D86681005512BD /* CardsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975BC20D86681005512BD /* CardsInteractor.swift */; };
-		2D1975BF20D8668B005512BD /* CardsInterctorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975BE20D8668B005512BD /* CardsInterctorContract.swift */; };
+		2D1975BF20D8668B005512BD /* CardsInteractorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975BE20D8668B005512BD /* CardsInteractorContract.swift */; };
 		2D1975C120D86694005512BD /* CardsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975C020D86694005512BD /* CardsRouter.swift */; };
 		2D1975C320D8669B005512BD /* CardsRouterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975C220D8669B005512BD /* CardsRouterContract.swift */; };
 		2D1975C620D866B7005512BD /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975C520D866B7005512BD /* CardCollectionViewCell.swift */; };
@@ -43,6 +43,9 @@
 		2D1975ED20D867B5005512BD /* AddCardConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975EC20D867B5005512BD /* AddCardConfigurator.swift */; };
 		2D1975EF20D867C6005512BD /* MoneyToPayConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975EE20D867C6005512BD /* MoneyToPayConfigurator.swift */; };
 		2D1975F120D867DE005512BD /* CardsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975F020D867DE005512BD /* CardsConfigurator.swift */; };
+		2D1975F320D87B6C005512BD /* CardsViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975F220D87B6C005512BD /* CardsViewContract.swift */; };
+		2D1975F520D87C34005512BD /* AddCardViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975F420D87C34005512BD /* AddCardViewContract.swift */; };
+		2D1975F720D87DE1005512BD /* MoneyToPayViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975F620D87DE1005512BD /* MoneyToPayViewContract.swift */; };
 		CC04F47D6FE2F6714A18E9BD /* Pods_Moni.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 663248890929A281B7332E7F /* Pods_Moni.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,7 +86,7 @@
 		2D1975B820D8666C005512BD /* CardsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsPresenter.swift; sourceTree = "<group>"; };
 		2D1975BA20D86676005512BD /* CardsPresenterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsPresenterContract.swift; sourceTree = "<group>"; };
 		2D1975BC20D86681005512BD /* CardsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsInteractor.swift; sourceTree = "<group>"; };
-		2D1975BE20D8668B005512BD /* CardsInterctorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsInterctorContract.swift; sourceTree = "<group>"; };
+		2D1975BE20D8668B005512BD /* CardsInteractorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsInteractorContract.swift; sourceTree = "<group>"; };
 		2D1975C020D86694005512BD /* CardsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsRouter.swift; sourceTree = "<group>"; };
 		2D1975C220D8669B005512BD /* CardsRouterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsRouterContract.swift; sourceTree = "<group>"; };
 		2D1975C520D866B7005512BD /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -106,6 +109,9 @@
 		2D1975EC20D867B5005512BD /* AddCardConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardConfigurator.swift; sourceTree = "<group>"; };
 		2D1975EE20D867C6005512BD /* MoneyToPayConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyToPayConfigurator.swift; sourceTree = "<group>"; };
 		2D1975F020D867DE005512BD /* CardsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsConfigurator.swift; sourceTree = "<group>"; };
+		2D1975F220D87B6C005512BD /* CardsViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewContract.swift; sourceTree = "<group>"; };
+		2D1975F420D87C34005512BD /* AddCardViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewContract.swift; sourceTree = "<group>"; };
+		2D1975F620D87DE1005512BD /* MoneyToPayViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyToPayViewContract.swift; sourceTree = "<group>"; };
 		663248890929A281B7332E7F /* Pods_Moni.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moni.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB997935F3EDE3162BC31136 /* Pods-Moni.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moni.release.xcconfig"; path = "Pods/Target Support Files/Pods-Moni/Pods-Moni.release.xcconfig"; sourceTree = "<group>"; };
 		ECF3B01C7BC6459B899E241F /* Pods-Moni.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moni.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Moni/Pods-Moni.debug.xcconfig"; sourceTree = "<group>"; };
@@ -237,6 +243,7 @@
 				2D1975B320D8664B005512BD /* Components */,
 				2D1975B420D86657005512BD /* CardsViewController.swift */,
 				2D1975B620D86660005512BD /* CardsViewController+Layout.swift */,
+				2D1975F220D87B6C005512BD /* CardsViewContract.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -254,7 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				2D1975BC20D86681005512BD /* CardsInteractor.swift */,
-				2D1975BE20D8668B005512BD /* CardsInterctorContract.swift */,
+				2D1975BE20D8668B005512BD /* CardsInteractorContract.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -289,6 +296,7 @@
 			children = (
 				2D1975D320D866FF005512BD /* MoneyToPayViewController.swift */,
 				2D1975D520D86706005512BD /* MoneyToPayViewController+Layout.swift */,
+				2D1975F620D87DE1005512BD /* MoneyToPayViewContract.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -356,6 +364,7 @@
 			children = (
 				2D1975DC20D8676B005512BD /* AddCardViewController.swift */,
 				2D1975DE20D86773005512BD /* AddCardViewController+Layout.swift */,
+				2D1975F420D87C34005512BD /* AddCardViewContract.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -574,6 +583,7 @@
 				2D1975CA20D866CE005512BD /* MoneyToPayRouterContract.swift in Sources */,
 				2D1975ED20D867B5005512BD /* AddCardConfigurator.swift in Sources */,
 				2D1975E520D86793005512BD /* AddCardInteractor.swift in Sources */,
+				2D1975F320D87B6C005512BD /* CardsViewContract.swift in Sources */,
 				2D1975E320D86787005512BD /* AddCardPresenterContract.swift in Sources */,
 				2D1975BD20D86681005512BD /* CardsInteractor.swift in Sources */,
 				2D1975B520D86657005512BD /* CardsViewController.swift in Sources */,
@@ -585,7 +595,7 @@
 				2D1975CE20D866E0005512BD /* MoneyToPayInteractorContract.swift in Sources */,
 				2D1975CC20D866D9005512BD /* MoneyToPayInteractor.swift in Sources */,
 				2D1975DF20D86773005512BD /* AddCardViewController+Layout.swift in Sources */,
-				2D1975BF20D8668B005512BD /* CardsInterctorContract.swift in Sources */,
+				2D1975BF20D8668B005512BD /* CardsInteractorContract.swift in Sources */,
 				2D1975D420D866FF005512BD /* MoneyToPayViewController.swift in Sources */,
 				2D1975EF20D867C6005512BD /* MoneyToPayConfigurator.swift in Sources */,
 				2D1975BB20D86676005512BD /* CardsPresenterContract.swift in Sources */,
@@ -597,6 +607,8 @@
 				2D1975E720D8679A005512BD /* AddCardInteractorContract.swift in Sources */,
 				2D1975C320D8669B005512BD /* CardsRouterContract.swift in Sources */,
 				2D1975E120D8677D005512BD /* AddCardPresenter.swift in Sources */,
+				2D1975F520D87C34005512BD /* AddCardViewContract.swift in Sources */,
+				2D1975F720D87DE1005512BD /* MoneyToPayViewContract.swift in Sources */,
 				2D1975D620D86706005512BD /* MoneyToPayViewController+Layout.swift in Sources */,
 				2D1975F120D867DE005512BD /* CardsConfigurator.swift in Sources */,
 				2D1975C120D86694005512BD /* CardsRouter.swift in Sources */,
@@ -776,12 +788,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2QH2U923HT;
-				INFOPLIST_FILE = Moni/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Moni/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.devsoul.Moni;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devsoul.moni;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -795,12 +807,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2QH2U923HT;
-				INFOPLIST_FILE = Moni/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Moni/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.devsoul.Moni;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devsoul.moni;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

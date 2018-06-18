@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+protocol CardsPresenterContract {
+    func getAllCards()
+    func goToEditCard()
+    func joinWithCard()
+}

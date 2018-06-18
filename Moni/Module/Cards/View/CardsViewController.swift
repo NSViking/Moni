@@ -7,3 +7,20 @@
 //
 
 import Foundation
+import UIKit
+
+class CardsViewController: UIViewController {
+    
+    var presenter: CardsPresenterContract?
+    
+    var collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupUI()
+    }
+}
+
+extension CardsViewController: CardsViewContract {
+    
+}

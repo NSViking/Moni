@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+class CardsInteractor: NSObject {
+    
+}
+
+extension CardsInteractor: CardsInteractorContract {
+    
+    func getAllCards() {
+        
+    }
+}

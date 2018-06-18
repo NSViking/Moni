@@ -7,3 +7,20 @@
 //
 
 import Foundation
+import UIKit
+
+class MoneyToPayViewController: UIViewController {
+    
+    var presenter: MoneyToPayPresenterContract?
+    
+    var collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupUI()
+    }
+}
+
+extension MoneyToPayViewController: MoneyToPayViewContract {
+    
+}

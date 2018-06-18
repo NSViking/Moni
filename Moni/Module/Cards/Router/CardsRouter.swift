@@ -7,3 +7,25 @@
 //
 
 import Foundation
+
+class CardsRouter: NSObject {
+    var viewController: CardsViewController
+    
+    init(viewController: CardsViewController) {
+        self.viewController = viewController
+    }
+}
+
+extension CardsRouter: CardsRouterContract {
+    func addCard() {
+        
+    }
+    
+    func joinWithCard() {
+        
+    }
+    
+    func goToEditCard() {
+        
+    }
+}

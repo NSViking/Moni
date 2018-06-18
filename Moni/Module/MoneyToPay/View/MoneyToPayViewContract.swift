@@ -1,5 +1,5 @@
 //
-//  CardsViewController+Layout.swift
+//  MoneyToPayViewContract.swift
 //  Moni
 //
 //  Created by Víctor Vicente on 19/06/2018.
@@ -8,9 +8,6 @@
 
 import Foundation
 
-extension CardsViewController {
+protocol MoneyToPayViewContract {
     
-    func setupUI() {
-        
-    }
 }

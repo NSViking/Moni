@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+class MoneyToPayRouter: NSObject {
+    var viewController: MoneyToPayViewController
+    
+    init(viewController: MoneyToPayViewController) {
+        self.viewController = viewController
+    }
+}
+
+extension MoneyToPayRouter: MoneyToPayRouterContract {
+    
+    func goBack() {
+        
+    }
+}

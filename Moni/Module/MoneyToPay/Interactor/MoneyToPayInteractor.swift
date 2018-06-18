@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+class MoneyToPayInteractor: NSObject {
+    
+}
+
+extension MoneyToPayInteractor: MoneyToPayInteractorContract {
+    
+}

@@ -7,3 +7,31 @@
 //
 
 import Foundation
+
+class AddCardPresenter: NSObject {
+    
+    var router: AddCardRouterContract
+    var interactor: AddCardInteractorContract
+    var view: AddCardViewContract
+    var dataSource: [String]
+    
+    init(interactor: AddCardInteractorContract,
+         view: AddCardViewContract,
+         router: AddCardRouterContract) {
+        self.interactor = interactor
+        self.view = view
+        self.router = router
+        dataSource = []
+    }
+}
+
+extension AddCardPresenter: AddCardPresenterContract {
+    
+    func saveCard() {
+        
+    }
+    
+    func goBack() {
+        
+    }
+}
