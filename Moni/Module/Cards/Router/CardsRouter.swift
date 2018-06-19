@@ -17,8 +17,10 @@ class CardsRouter: NSObject {
 }
 
 extension CardsRouter: CardsRouterContract {
+    
     func addCard() {
-        
+        let addCardVC = AddCardConfigurator.createAddCardViperStack()
+        self.viewController.present(addCardVC, animated: true, completion: nil)
     }
     
     func joinWithCard() {

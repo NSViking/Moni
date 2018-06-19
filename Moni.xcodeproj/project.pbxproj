@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D0341E020D88830008A2B21 /* Stripe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0341DF20D88830008A2B21 /* Stripe.framework */; };
+		2D0341E220D88835008A2B21 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0341E120D88835008A2B21 /* StoreKit.framework */; };
 		2D19757520D86481005512BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D19757420D86481005512BD /* AppDelegate.swift */; };
 		2D19757720D86481005512BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D19757620D86481005512BD /* ViewController.swift */; };
-		2D19757A20D86481005512BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D19757820D86481005512BD /* Main.storyboard */; };
 		2D19757C20D86483005512BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D19757B20D86483005512BD /* Assets.xcassets */; };
 		2D19757F20D86483005512BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D19757D20D86483005512BD /* LaunchScreen.storyboard */; };
 		2D19758A20D86483005512BD /* MoniTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D19758920D86483005512BD /* MoniTests.swift */; };
@@ -46,6 +47,8 @@
 		2D1975F320D87B6C005512BD /* CardsViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975F220D87B6C005512BD /* CardsViewContract.swift */; };
 		2D1975F520D87C34005512BD /* AddCardViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975F420D87C34005512BD /* AddCardViewContract.swift */; };
 		2D1975F720D87DE1005512BD /* MoneyToPayViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975F620D87DE1005512BD /* MoneyToPayViewContract.swift */; };
+		2D1975FB20D87F24005512BD /* RootPresenterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975FA20D87F24005512BD /* RootPresenterContract.swift */; };
+		2D1975FD20D87F2C005512BD /* RootPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975FC20D87F2C005512BD /* RootPresenter.swift */; };
 		CC04F47D6FE2F6714A18E9BD /* Pods_Moni.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 663248890929A281B7332E7F /* Pods_Moni.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,10 +70,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D0341DF20D88830008A2B21 /* Stripe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Stripe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D0341E120D88835008A2B21 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		2D19757120D86481005512BD /* Moni.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moni.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D19757420D86481005512BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D19757620D86481005512BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2D19757920D86481005512BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D19757B20D86483005512BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D19757E20D86483005512BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D19758020D86483005512BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 		2D1975F220D87B6C005512BD /* CardsViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewContract.swift; sourceTree = "<group>"; };
 		2D1975F420D87C34005512BD /* AddCardViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewContract.swift; sourceTree = "<group>"; };
 		2D1975F620D87DE1005512BD /* MoneyToPayViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyToPayViewContract.swift; sourceTree = "<group>"; };
+		2D1975FA20D87F24005512BD /* RootPresenterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresenterContract.swift; sourceTree = "<group>"; };
+		2D1975FC20D87F2C005512BD /* RootPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresenter.swift; sourceTree = "<group>"; };
 		663248890929A281B7332E7F /* Pods_Moni.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moni.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB997935F3EDE3162BC31136 /* Pods-Moni.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moni.release.xcconfig"; path = "Pods/Target Support Files/Pods-Moni/Pods-Moni.release.xcconfig"; sourceTree = "<group>"; };
 		ECF3B01C7BC6459B899E241F /* Pods-Moni.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moni.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Moni/Pods-Moni.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +128,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D0341E220D88835008A2B21 /* StoreKit.framework in Frameworks */,
+				2D0341E020D88830008A2B21 /* Stripe.framework in Frameworks */,
 				CC04F47D6FE2F6714A18E9BD /* Pods_Moni.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +154,8 @@
 		23F2BB39759538357747F15B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2D0341E120D88835008A2B21 /* StoreKit.framework */,
+				2D0341DF20D88830008A2B21 /* Stripe.framework */,
 				663248890929A281B7332E7F /* Pods_Moni.framework */,
 			);
 			name = Frameworks;
@@ -206,6 +216,7 @@
 		2D1975A220D865AC005512BD /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				2D1975F820D87F10005512BD /* Root */,
 				2D1975A420D865BA005512BD /* MoneyToPay */,
 				2D1975D720D86732005512BD /* AddCard */,
 				2D1975A320D865B3005512BD /* Cards */,
@@ -331,7 +342,6 @@
 		2D1975B120D86624005512BD /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				2D19757820D86481005512BD /* Main.storyboard */,
 				2D19757B20D86483005512BD /* Assets.xcassets */,
 				2D19757D20D86483005512BD /* LaunchScreen.storyboard */,
 				2D19758020D86483005512BD /* Info.plist */,
@@ -394,6 +404,23 @@
 				2D1975EA20D867AB005512BD /* AddCardRouterContract.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		2D1975F820D87F10005512BD /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				2D1975F920D87F18005512BD /* Presenter */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		2D1975F920D87F18005512BD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2D1975FA20D87F24005512BD /* RootPresenterContract.swift */,
+				2D1975FC20D87F2C005512BD /* RootPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		6397489BE9607F23C6F2520D /* Pods */ = {
@@ -513,7 +540,6 @@
 			files = (
 				2D19757F20D86483005512BD /* LaunchScreen.storyboard in Resources */,
 				2D19757C20D86483005512BD /* Assets.xcassets in Resources */,
-				2D19757A20D86481005512BD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,12 +567,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Moni/Pods-Moni-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CreditCardForm/CreditCardForm.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
 				"${BUILT_PRODUCTS_DIR}/ionicons/ionicons.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CreditCardForm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ionicons.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -608,6 +638,8 @@
 				2D1975C320D8669B005512BD /* CardsRouterContract.swift in Sources */,
 				2D1975E120D8677D005512BD /* AddCardPresenter.swift in Sources */,
 				2D1975F520D87C34005512BD /* AddCardViewContract.swift in Sources */,
+				2D1975FB20D87F24005512BD /* RootPresenterContract.swift in Sources */,
+				2D1975FD20D87F2C005512BD /* RootPresenter.swift in Sources */,
 				2D1975F720D87DE1005512BD /* MoneyToPayViewContract.swift in Sources */,
 				2D1975D620D86706005512BD /* MoneyToPayViewController+Layout.swift in Sources */,
 				2D1975F120D867DE005512BD /* CardsConfigurator.swift in Sources */,
@@ -648,14 +680,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2D19757820D86481005512BD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2D19757920D86481005512BD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2D19757D20D86483005512BD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

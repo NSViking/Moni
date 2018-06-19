@@ -38,4 +38,8 @@ extension CardsPresenter: CardsPresenterContract {
     func joinWithCard() {
         
     }
+    
+    func addNewCard() {
+        self.router.addCard()
+    }
 }

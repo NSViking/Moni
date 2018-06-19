@@ -11,6 +11,15 @@ import Foundation
 extension MoneyToPayViewController {
     
     func setupUI() {
-        
+        self.view.addSubview(webView)
+    }
+    
+    func setupAutolayout() {
+        self.webView.snp.makeConstraints { (maker) in
+            maker.left.equalToSuperview()
+            maker.top.equalToSuperview()
+            maker.right.equalToSuperview()
+            maker.bottom.equalToSuperview()
+        }
     }
 }

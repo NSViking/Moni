@@ -32,6 +32,6 @@ extension AddCardPresenter: AddCardPresenterContract {
     }
     
     func goBack() {
-        
+        self.router.goBack()
     }
 }

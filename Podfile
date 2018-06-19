@@ -8,5 +8,7 @@ target 'Moni' do
     pod 'SnapKit', '~> 4.0.0'
     pod 'ionicons'
     pod 'Fabric'
+    pod 'Stripe'
+    pod 'CreditCardForm'
 end
 

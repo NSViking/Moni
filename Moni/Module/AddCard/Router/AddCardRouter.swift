@@ -19,6 +19,6 @@ class AddCardRouter: NSObject {
 extension AddCardRouter: AddCardRouterContract {
 
     func goBack() {
-        
+        self.viewController.dismiss(animated: true, completion: nil)
     }
 }

@@ -1,28 +1,36 @@
 PODS:
   - CardIO (5.4.1)
+  - CreditCardForm (0.1.7)
   - Fabric (1.7.6)
   - ionicons (2.1.1)
   - SnapKit (4.0.0)
+  - Stripe (13.0.0)
 
 DEPENDENCIES:
   - CardIO
+  - CreditCardForm
   - Fabric
   - ionicons
   - SnapKit (~> 4.0.0)
+  - Stripe
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - CardIO
+    - CreditCardForm
     - Fabric
     - ionicons
     - SnapKit
+    - Stripe
 
 SPEC CHECKSUMS:
   CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
+  CreditCardForm: 66f0ce5a12182000a457d56f5630049efd3432df
   Fabric: f8d42c893bb187326a7968b62abe55c36a987a46
   ionicons: 630bcd2c2970741c3359e3a35ad544e71d3c086b
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  Stripe: 542f2c4493ce31a99fa041fe4973206e8c868f29
 
-PODFILE CHECKSUM: 4080c9dee8f8f059b3ecb53298eba6801f6f3e5d
+PODFILE CHECKSUM: 5707b99ac5441131af99457611c71227e10a0e68
 
 COCOAPODS: 1.5.2
