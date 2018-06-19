@@ -49,6 +49,31 @@
 		2D1975F720D87DE1005512BD /* MoneyToPayViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975F620D87DE1005512BD /* MoneyToPayViewContract.swift */; };
 		2D1975FB20D87F24005512BD /* RootPresenterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975FA20D87F24005512BD /* RootPresenterContract.swift */; };
 		2D1975FD20D87F2C005512BD /* RootPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975FC20D87F2C005512BD /* RootPresenter.swift */; };
+		2D6C3E2F20D9A0880047113F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6C3E2C20D9A0870047113F /* Colors.swift */; };
+		2D6C3E3020D9A0880047113F /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6C3E2D20D9A0870047113F /* Views.swift */; };
+		2D6C3E3120D9A0880047113F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6C3E2E20D9A0880047113F /* Fonts.swift */; };
+		2D6C3E4820D9A0B20047113F /* SFCompactDisplay-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D6C3E3320D9A0B10047113F /* SFCompactDisplay-Semibold.otf */; };
+		2D6C3E4920D9A0B20047113F /* SFCompactText-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D6C3E3420D9A0B10047113F /* SFCompactText-BoldItalic.otf */; };
+		2D6C3E4A20D9A0B20047113F /* SFCompactText-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D6C3E3520D9A0B10047113F /* SFCompactText-MediumItalic.otf */; };
+		2D6C3E4B20D9A0B20047113F /* SFCompactDisplay-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D6C3E3620D9A0B10047113F /* SFCompactDisplay-Black.otf */; };
+		2D6C3E4C20D9A0B20047113F /* SFCompactText-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D6C3E3720D9A0B10047113F /* SFCompactText-Light.otf */; };
+		2D6C3E4D20D9A0B20047113F /* SFCompactDisplay-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D6C3E3820D9A0B10047113F /* SFCompactDisplay-Bold.otf */; };
+		2D6C3E4E20D9A0B20047113F /* SFCompactText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D6C3E3920D9A0B10047113F /* SFCompactText-Regular.otf */; };
+		2D6C3E4F20D9A0B20047113F /* SFCompactDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D6C3E3A20D9A0B10047113F /* SFCompactDisplay-Regular.otf */; };
+		2D6C3E5020D9A0B20047113F /* SFCompactDisplay-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D6C3E3B20D9A0B10047113F /* SFCompactDisplay-Light.otf */; };
+		2D6C3E5120D9A0B20047113F /* SFCompactText-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D6C3E3C20D9A0B20047113F /* SFCompactText-Bold.otf */; };
+		2D6C3E5220D9A0B20047113F /* SFCompactDisplay-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D6C3E3D20D9A0B20047113F /* SFCompactDisplay-Thin.otf */; };
+		2D6C3E5320D9A0B20047113F /* SFCompactText-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D6C3E3E20D9A0B20047113F /* SFCompactText-LightItalic.otf */; };
+		2D6C3E5420D9A0B20047113F /* SFCompactText-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D6C3E3F20D9A0B20047113F /* SFCompactText-HeavyItalic.otf */; };
+		2D6C3E5520D9A0B20047113F /* SFCompactText-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D6C3E4020D9A0B20047113F /* SFCompactText-RegularItalic.otf */; };
+		2D6C3E5620D9A0B20047113F /* SFCompactDisplay-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D6C3E4120D9A0B20047113F /* SFCompactDisplay-Medium.otf */; };
+		2D6C3E5720D9A0B20047113F /* SFCompactDisplay-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D6C3E4220D9A0B20047113F /* SFCompactDisplay-Heavy.otf */; };
+		2D6C3E5820D9A0B20047113F /* SFCompactText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D6C3E4320D9A0B20047113F /* SFCompactText-Medium.otf */; };
+		2D6C3E5920D9A0B20047113F /* SFCompactDisplay-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D6C3E4420D9A0B20047113F /* SFCompactDisplay-Ultralight.otf */; };
+		2D6C3E5A20D9A0B20047113F /* SFCompactText-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D6C3E4520D9A0B20047113F /* SFCompactText-Semibold.otf */; };
+		2D6C3E5B20D9A0B20047113F /* SFCompactText-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D6C3E4620D9A0B20047113F /* SFCompactText-Heavy.otf */; };
+		2D6C3E5C20D9A0B20047113F /* SFCompactText-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D6C3E4720D9A0B20047113F /* SFCompactText-SemiboldItalic.otf */; };
+		2D6C3E5F20D9A1F10047113F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6C3E5E20D9A1F10047113F /* Card.swift */; };
 		CC04F47D6FE2F6714A18E9BD /* Pods_Moni.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 663248890929A281B7332E7F /* Pods_Moni.framework */; };
 /* End PBXBuildFile section */
 
@@ -118,6 +143,31 @@
 		2D1975F620D87DE1005512BD /* MoneyToPayViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyToPayViewContract.swift; sourceTree = "<group>"; };
 		2D1975FA20D87F24005512BD /* RootPresenterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresenterContract.swift; sourceTree = "<group>"; };
 		2D1975FC20D87F2C005512BD /* RootPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresenter.swift; sourceTree = "<group>"; };
+		2D6C3E2C20D9A0870047113F /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		2D6C3E2D20D9A0870047113F /* Views.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
+		2D6C3E2E20D9A0880047113F /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		2D6C3E3320D9A0B10047113F /* SFCompactDisplay-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Semibold.otf"; sourceTree = "<group>"; };
+		2D6C3E3420D9A0B10047113F /* SFCompactText-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-BoldItalic.otf"; sourceTree = "<group>"; };
+		2D6C3E3520D9A0B10047113F /* SFCompactText-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-MediumItalic.otf"; sourceTree = "<group>"; };
+		2D6C3E3620D9A0B10047113F /* SFCompactDisplay-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Black.otf"; sourceTree = "<group>"; };
+		2D6C3E3720D9A0B10047113F /* SFCompactText-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-Light.otf"; sourceTree = "<group>"; };
+		2D6C3E3820D9A0B10047113F /* SFCompactDisplay-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Bold.otf"; sourceTree = "<group>"; };
+		2D6C3E3920D9A0B10047113F /* SFCompactText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-Regular.otf"; sourceTree = "<group>"; };
+		2D6C3E3A20D9A0B10047113F /* SFCompactDisplay-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Regular.otf"; sourceTree = "<group>"; };
+		2D6C3E3B20D9A0B10047113F /* SFCompactDisplay-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Light.otf"; sourceTree = "<group>"; };
+		2D6C3E3C20D9A0B20047113F /* SFCompactText-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-Bold.otf"; sourceTree = "<group>"; };
+		2D6C3E3D20D9A0B20047113F /* SFCompactDisplay-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Thin.otf"; sourceTree = "<group>"; };
+		2D6C3E3E20D9A0B20047113F /* SFCompactText-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-LightItalic.otf"; sourceTree = "<group>"; };
+		2D6C3E3F20D9A0B20047113F /* SFCompactText-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-HeavyItalic.otf"; sourceTree = "<group>"; };
+		2D6C3E4020D9A0B20047113F /* SFCompactText-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-RegularItalic.otf"; sourceTree = "<group>"; };
+		2D6C3E4120D9A0B20047113F /* SFCompactDisplay-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Medium.otf"; sourceTree = "<group>"; };
+		2D6C3E4220D9A0B20047113F /* SFCompactDisplay-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Heavy.otf"; sourceTree = "<group>"; };
+		2D6C3E4320D9A0B20047113F /* SFCompactText-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-Medium.otf"; sourceTree = "<group>"; };
+		2D6C3E4420D9A0B20047113F /* SFCompactDisplay-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Ultralight.otf"; sourceTree = "<group>"; };
+		2D6C3E4520D9A0B20047113F /* SFCompactText-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-Semibold.otf"; sourceTree = "<group>"; };
+		2D6C3E4620D9A0B20047113F /* SFCompactText-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-Heavy.otf"; sourceTree = "<group>"; };
+		2D6C3E4720D9A0B20047113F /* SFCompactText-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		2D6C3E5E20D9A1F10047113F /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		663248890929A281B7332E7F /* Pods_Moni.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moni.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB997935F3EDE3162BC31136 /* Pods-Moni.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moni.release.xcconfig"; path = "Pods/Target Support Files/Pods-Moni/Pods-Moni.release.xcconfig"; sourceTree = "<group>"; };
 		ECF3B01C7BC6459B899E241F /* Pods-Moni.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moni.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Moni/Pods-Moni.debug.xcconfig"; sourceTree = "<group>"; };
@@ -186,6 +236,9 @@
 		2D19757320D86481005512BD /* Moni */ = {
 			isa = PBXGroup;
 			children = (
+				2D6C3E5D20D9A1E60047113F /* Models */,
+				2D6C3E3220D9A0A20047113F /* Resources */,
+				2D6C3E2B20D9A06D0047113F /* Utils */,
 				2D1975B120D86624005512BD /* SupportingFiles */,
 				2D1975A920D865E3005512BD /* Repository */,
 				2D1975A220D865AC005512BD /* Module */,
@@ -423,6 +476,52 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		2D6C3E2B20D9A06D0047113F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2D6C3E2C20D9A0870047113F /* Colors.swift */,
+				2D6C3E2E20D9A0880047113F /* Fonts.swift */,
+				2D6C3E2D20D9A0870047113F /* Views.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2D6C3E3220D9A0A20047113F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2D6C3E3620D9A0B10047113F /* SFCompactDisplay-Black.otf */,
+				2D6C3E3820D9A0B10047113F /* SFCompactDisplay-Bold.otf */,
+				2D6C3E4220D9A0B20047113F /* SFCompactDisplay-Heavy.otf */,
+				2D6C3E3B20D9A0B10047113F /* SFCompactDisplay-Light.otf */,
+				2D6C3E4120D9A0B20047113F /* SFCompactDisplay-Medium.otf */,
+				2D6C3E3A20D9A0B10047113F /* SFCompactDisplay-Regular.otf */,
+				2D6C3E3320D9A0B10047113F /* SFCompactDisplay-Semibold.otf */,
+				2D6C3E3D20D9A0B20047113F /* SFCompactDisplay-Thin.otf */,
+				2D6C3E4420D9A0B20047113F /* SFCompactDisplay-Ultralight.otf */,
+				2D6C3E3C20D9A0B20047113F /* SFCompactText-Bold.otf */,
+				2D6C3E3420D9A0B10047113F /* SFCompactText-BoldItalic.otf */,
+				2D6C3E4620D9A0B20047113F /* SFCompactText-Heavy.otf */,
+				2D6C3E3F20D9A0B20047113F /* SFCompactText-HeavyItalic.otf */,
+				2D6C3E3720D9A0B10047113F /* SFCompactText-Light.otf */,
+				2D6C3E3E20D9A0B20047113F /* SFCompactText-LightItalic.otf */,
+				2D6C3E4320D9A0B20047113F /* SFCompactText-Medium.otf */,
+				2D6C3E3520D9A0B10047113F /* SFCompactText-MediumItalic.otf */,
+				2D6C3E3920D9A0B10047113F /* SFCompactText-Regular.otf */,
+				2D6C3E4020D9A0B20047113F /* SFCompactText-RegularItalic.otf */,
+				2D6C3E4520D9A0B20047113F /* SFCompactText-Semibold.otf */,
+				2D6C3E4720D9A0B20047113F /* SFCompactText-SemiboldItalic.otf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2D6C3E5D20D9A1E60047113F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2D6C3E5E20D9A1F10047113F /* Card.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		6397489BE9607F23C6F2520D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -538,8 +637,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D6C3E5520D9A0B20047113F /* SFCompactText-RegularItalic.otf in Resources */,
+				2D6C3E5820D9A0B20047113F /* SFCompactText-Medium.otf in Resources */,
+				2D6C3E5320D9A0B20047113F /* SFCompactText-LightItalic.otf in Resources */,
+				2D6C3E5220D9A0B20047113F /* SFCompactDisplay-Thin.otf in Resources */,
+				2D6C3E5720D9A0B20047113F /* SFCompactDisplay-Heavy.otf in Resources */,
+				2D6C3E5920D9A0B20047113F /* SFCompactDisplay-Ultralight.otf in Resources */,
+				2D6C3E5620D9A0B20047113F /* SFCompactDisplay-Medium.otf in Resources */,
+				2D6C3E5B20D9A0B20047113F /* SFCompactText-Heavy.otf in Resources */,
+				2D6C3E5120D9A0B20047113F /* SFCompactText-Bold.otf in Resources */,
+				2D6C3E5420D9A0B20047113F /* SFCompactText-HeavyItalic.otf in Resources */,
+				2D6C3E4A20D9A0B20047113F /* SFCompactText-MediumItalic.otf in Resources */,
+				2D6C3E5020D9A0B20047113F /* SFCompactDisplay-Light.otf in Resources */,
+				2D6C3E4C20D9A0B20047113F /* SFCompactText-Light.otf in Resources */,
+				2D6C3E5A20D9A0B20047113F /* SFCompactText-Semibold.otf in Resources */,
+				2D6C3E4920D9A0B20047113F /* SFCompactText-BoldItalic.otf in Resources */,
 				2D19757F20D86483005512BD /* LaunchScreen.storyboard in Resources */,
+				2D6C3E4D20D9A0B20047113F /* SFCompactDisplay-Bold.otf in Resources */,
+				2D6C3E5C20D9A0B20047113F /* SFCompactText-SemiboldItalic.otf in Resources */,
+				2D6C3E4E20D9A0B20047113F /* SFCompactText-Regular.otf in Resources */,
+				2D6C3E4F20D9A0B20047113F /* SFCompactDisplay-Regular.otf in Resources */,
+				2D6C3E4B20D9A0B20047113F /* SFCompactDisplay-Black.otf in Resources */,
 				2D19757C20D86483005512BD /* Assets.xcassets in Resources */,
+				2D6C3E4820D9A0B20047113F /* SFCompactDisplay-Semibold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,9 +736,11 @@
 				2D1975F320D87B6C005512BD /* CardsViewContract.swift in Sources */,
 				2D1975E320D86787005512BD /* AddCardPresenterContract.swift in Sources */,
 				2D1975BD20D86681005512BD /* CardsInteractor.swift in Sources */,
+				2D6C3E5F20D9A1F10047113F /* Card.swift in Sources */,
 				2D1975B520D86657005512BD /* CardsViewController.swift in Sources */,
 				2D19757720D86481005512BD /* ViewController.swift in Sources */,
 				2D1975AC20D865FD005512BD /* CardsRepository.swift in Sources */,
+				2D6C3E3020D9A0880047113F /* Views.swift in Sources */,
 				2D1975EB20D867AB005512BD /* AddCardRouterContract.swift in Sources */,
 				2D1975C620D866B7005512BD /* CardCollectionViewCell.swift in Sources */,
 				2D1975D020D866E9005512BD /* MoneyToPayPresenter.swift in Sources */,
@@ -636,6 +758,8 @@
 				2D1975B920D8666C005512BD /* CardsPresenter.swift in Sources */,
 				2D1975E720D8679A005512BD /* AddCardInteractorContract.swift in Sources */,
 				2D1975C320D8669B005512BD /* CardsRouterContract.swift in Sources */,
+				2D6C3E3120D9A0880047113F /* Fonts.swift in Sources */,
+				2D6C3E2F20D9A0880047113F /* Colors.swift in Sources */,
 				2D1975E120D8677D005512BD /* AddCardPresenter.swift in Sources */,
 				2D1975F520D87C34005512BD /* AddCardViewContract.swift in Sources */,
 				2D1975FB20D87F24005512BD /* RootPresenterContract.swift in Sources */,

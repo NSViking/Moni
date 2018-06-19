@@ -15,11 +15,19 @@ extension CardsViewController {
     
     func setupUI() {
         self.view.addSubview(self.addButton)
+        self.view.addSubview(self.titleLabel)
+        self.view.addSubview(self.collectionView)
         
-        self.view.backgroundColor = UIColor.orange
+        self.view.backgroundColor = UIColor.moni_pink()
         
         self.addButton.setImage(IonIcons.image(withIcon: ion_android_add_circle, size: 35, color: UIColor.white), for: .normal)
         self.addButton.addTarget(self, action: #selector(addButtonDidPress), for: .touchUpInside)
+        
+        self.titleLabel.textColor = UIColor.white
+        self.titleLabel.font = UIFont.moni_bold(36)
+        self.titleLabel.numberOfLines = 0
+        
+        self.collectionView.backgroundColor = UIColor.clear
     }
     
     func setupAutolayout() {
@@ -28,6 +36,18 @@ extension CardsViewController {
             maker.top.equalToSuperview().offset(40)
             maker.height.equalTo(45)
             maker.width.equalTo(45)
+        }
+        
+        self.titleLabel.snp.makeConstraints { (maker) in
+            maker.left.equalToSuperview().offset(20)
+            maker.top.equalToSuperview().offset(40)
+        }
+        
+        self.collectionView.snp.makeConstraints { (maker) in
+            maker.top.equalToSuperview().offset(90)
+            maker.left.equalToSuperview()
+            maker.right.equalToSuperview()
+            maker.bottom.equalToSuperview()
         }
     }
 }

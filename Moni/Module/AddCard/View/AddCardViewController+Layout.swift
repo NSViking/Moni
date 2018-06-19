@@ -13,8 +13,9 @@ import ionicons
 extension AddCardViewController {
     
     func setupUI() {
-        self.view.backgroundColor = UIColor.blue
+        self.view.backgroundColor = UIColor.moni_pink()
         
+        self.view.addSubview(self.titleLabel)
         self.view.addSubview(self.closeButton)
         self.view.addSubview(self.creditCardForm)
         self.view.addSubview(self.paymentTextField)
@@ -24,10 +25,10 @@ extension AddCardViewController {
         self.closeButton.addTarget(self, action: #selector(closeButtonDidPress), for: .touchUpInside)
         
         self.saveButton.setTitle("SAVE", for: .normal)
-        self.saveButton.backgroundColor = UIColor.green
+        self.saveButton.backgroundColor = UIColor.white
         self.saveButton.layer.masksToBounds = true
         self.saveButton.layer.cornerRadius = 22
-        self.saveButton.setTitleColor(UIColor.white, for: .normal)
+        self.saveButton.setTitleColor(UIColor.moni_pink(), for: .normal)
         self.saveButton.addTarget(self, action: #selector(saveButtonDidPress), for: .touchUpInside)
         
         self.paymentTextField.frame = CGRect(x: 15, y: 199, width: self.view.frame.size.width - 30, height: 44)
@@ -43,12 +44,21 @@ extension AddCardViewController {
         self.paymentTextField.layer.masksToBounds = true
         
         self.paymentTextField.delegate = self
+        
+        self.titleLabel.textColor = UIColor.white
+        self.titleLabel.font = UIFont.moni_bold(36)
+        self.titleLabel.numberOfLines = 0
     }
     
     func setupAutolayout() {
         
+        self.titleLabel.snp.makeConstraints { (maker) in
+            maker.left.equalToSuperview().offset(20)
+            maker.top.equalToSuperview().offset(40)
+        }
+        
         self.creditCardForm.snp.makeConstraints { (maker) in
-            maker.top.equalToSuperview().offset(80)
+            maker.top.equalTo(self.titleLabel.snp.bottom).offset(20)
             maker.width.equalTo(260)
             maker.height.equalTo(140)
             maker.centerX.equalToSuperview()

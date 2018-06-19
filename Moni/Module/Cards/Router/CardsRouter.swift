@@ -20,6 +20,7 @@ extension CardsRouter: CardsRouterContract {
     
     func addCard() {
         let addCardVC = AddCardConfigurator.createAddCardViperStack()
+        addCardVC.modalTransitionStyle = .crossDissolve
         self.viewController.present(addCardVC, animated: true, completion: nil)
     }
     

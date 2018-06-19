@@ -15,6 +15,7 @@ class AddCardViewController: UIViewController {
     
     var presenter: AddCardPresenterContract?
     
+    var titleLabel = UILabel()
     var closeButton = UIButton()
     var creditCardForm = CreditCardFormView()
     var paymentTextField = STPPaymentCardTextField()
@@ -24,6 +25,10 @@ class AddCardViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         setupAutolayout()
+    }
+    
+    func setupData() {
+        self.titleLabel.text = "Add Card"
     }
 }
 
