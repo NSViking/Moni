@@ -108,14 +108,19 @@ extension MoneyToPayViewController: UIWebViewDelegate {
             completedString = String(format: "document.getElementById(\"numero4\").classList.add(\"input_border_normal_ok\")")
             self.webView.stringByEvaluatingJavaScript(from: completedString)
             
+            //Remove number warnings
+            completedString = String(format:"document.getElementById(\"numero1\").parentElement.parentElement.classList.replace(\"error_required\",\"add_noerror_margin\")")
+            self.webView.stringByEvaluatingJavaScript(from: completedString)
             
+            //CCV
             completedString = String(format: "document.getElementById(\"ccv\").value='%@'", ccv)
             self.webView.stringByEvaluatingJavaScript(from: completedString)
             completedString = String(format: "document.getElementById(\"ccv\").classList.add(\"input_border_normal_ok\")")
             self.webView.stringByEvaluatingJavaScript(from: completedString)
+            completedString = String(format: "document.getElementById(\"ccv\").parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.classList.replace(\"error_required\",\"add_noerror_margin\")")
+            self.webView.stringByEvaluatingJavaScript(from: completedString)
 
-
-            //
+            //Month
             completedString = String(format: "$(\"button\")[1].click(function(){});")
             self.webView.stringByEvaluatingJavaScript(from: completedString)
             
@@ -126,7 +131,7 @@ extension MoneyToPayViewController: UIWebViewDelegate {
             self.webView.stringByEvaluatingJavaScript(from: completedString)
             
             
-            
+            //Year
             completedString = String(format: "$(\"button\")[2].click(function(){});")
             self.webView.stringByEvaluatingJavaScript(from: completedString)
             
