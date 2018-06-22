@@ -34,7 +34,7 @@ class CardCollectionViewCell: UICollectionViewCell {
         self.addSubview(cardTitle)
         self.addSubview(cardView)
         
-        cardTitle.font = UIFont.systemFont(ofSize: 16)
+        cardTitle.font = UIFont.moni_bold(16)
         cardTitle.textColor = UIColor.white
         cardTitle.numberOfLines = 0
         cardTitle.textAlignment = .center
@@ -57,7 +57,7 @@ class CardCollectionViewCell: UICollectionViewCell {
         }
         
         self.cardView.snp.makeConstraints { (maker) in
-            maker.top.equalTo(self.cardTitle.snp.bottom).offset(-8)
+            maker.top.equalTo(self.cardTitle.snp.bottom).offset(14)
             maker.width.equalTo(260)
             maker.height.equalTo(140)
             maker.centerX.equalToSuperview()
@@ -66,10 +66,13 @@ class CardCollectionViewCell: UICollectionViewCell {
     
     func configure(card: Card) {
         
-        self.cardTitle.text = card.title
+        self.cardTitle.text = "Restaurantes"//card.title
         let year = Int(card.year)
         let month = Int(card.month)
         
         self.cardView.paymentCardTextFieldDidChange(cardNumber: card.number, expirationYear: UInt(bitPattern: year!), expirationMonth: UInt(bitPattern: month!), cvc: card.cvv)
+        self.cardView.paymentCardTextFieldDidEndEditingExpiration(expirationYear: UInt(bitPattern: year!))
+        self.cardView.paymentCardTextFieldDidBeginEditingCVC()
+        self.cardView.paymentCardTextFieldDidEndEditingCVC()
     }
 }

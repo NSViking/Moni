@@ -17,7 +17,7 @@ extension UIColor
     
     public class func moni_pink(alpha: CGFloat = 1.0) -> UIColor
     {
-        return UIColor (red: 255/255, green: 40/255, blue: 49/255, alpha: alpha)
+        return UIColor (red: 232/255, green: 56/255, blue: 170/255, alpha: alpha)
     }
     
     public class func addGradientTop(viewToApply: UIView, colorK: UIColor)
