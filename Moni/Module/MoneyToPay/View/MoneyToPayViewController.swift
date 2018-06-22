@@ -15,6 +15,7 @@ class MoneyToPayViewController: UIViewController {
     
     var webView = UIWebView()
     var titleLabel = UILabel()
+    var descriptionLabel = UILabel()
     var backButton = UIButton()
     
     override func viewDidLoad() {
@@ -136,6 +137,11 @@ extension MoneyToPayViewController: UIWebViewDelegate {
             self.webView.stringByEvaluatingJavaScript(from: completedString)
             
             completedString = String(format: "var input = document.getElementsByTagName(\"span\");for(i = 0;i < input.length; i++){if (input[i].innerText == \(year)) {input[i].parentElement.click(function(){})}}")
+            self.webView.stringByEvaluatingJavaScript(from: completedString)
+            
+        } else {
+            
+            let completedString = String(format: "document.getElementsByClassName(\"box\")[1].children[0].click(function(){});")
             self.webView.stringByEvaluatingJavaScript(from: completedString)
         }
     }

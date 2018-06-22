@@ -19,6 +19,8 @@ class AddCardViewController: UIViewController {
     var closeButton = UIButton()
     var creditCardForm = CreditCardFormView()
     var paymentTextField = STPPaymentCardTextField()
+    var titleTextfield = UITextField()
+    var separatorLineView = UIView()
     var saveButton = UIButton()
     
     override func viewDidLoad() {
@@ -29,6 +31,7 @@ class AddCardViewController: UIViewController {
     }
     
     func setupData() {
+        self.titleTextfield.placeholder = "Enter a name for your card"
         self.titleLabel.text = "Add Card"
         self.saveButton.isEnabled = false
     }
@@ -70,17 +73,25 @@ extension AddCardViewController {
     
     @objc func saveButtonDidPress() {
         
-        let month = "\(self.paymentTextField.expirationMonth)"
-        let year = "\(self.paymentTextField.expirationYear)"
-        guard let cardNumber = self.paymentTextField.cardNumber else {
-            return
+        if (self.titleTextfield.text != nil && self.titleTextfield.text != "") {
+            let month = "\(self.paymentTextField.expirationMonth)"
+            let year = "\(self.paymentTextField.expirationYear)"
+            guard let cardNumber = self.paymentTextField.cardNumber else {
+                return
+            }
+            guard let cvc = self.paymentTextField.cvc else {
+                return
+            }
+            
+            guard let name = self.titleTextfield.text else {
+                return
+            }
+            
+            self.presenter?.saveCard(name: name, number: cardNumber, month: month, year: year, cvv: cvc)
+            
+            self.presenter?.goBack()
+        } else {
+            
         }
-        guard let cvc = self.paymentTextField.cvc else {
-            return
-        }
-        
-        self.presenter?.saveCard(name: "", number: cardNumber, month: month, year: year, cvv: cvc)
-        
-        self.presenter?.goBack()
     }
 }

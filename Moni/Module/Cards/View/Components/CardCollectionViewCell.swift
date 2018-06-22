@@ -66,7 +66,7 @@ class CardCollectionViewCell: UICollectionViewCell {
     
     func configure(card: Card) {
         
-        self.cardTitle.text = "Restaurantes"//card.title
+        self.cardTitle.text = card.title
         let year = Int(card.year)
         let month = Int(card.month)
         

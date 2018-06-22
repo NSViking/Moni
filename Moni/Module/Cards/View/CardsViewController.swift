@@ -27,14 +27,18 @@ class CardsViewController: UIViewController {
         setupData()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.presenter?.setupData()
+    }
+    
     func setupData() {
         self.collectionView.register(CardCollectionViewCell.self, forCellWithReuseIdentifier: CardCollectionViewCell.identifier())
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
         
         self.titleLabel.text = "My Cards"
-        
-        self.presenter?.setupData()
     }
 }
 

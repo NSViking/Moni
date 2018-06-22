@@ -17,6 +17,8 @@ extension AddCardViewController {
         
         self.view.addSubview(self.titleLabel)
         self.view.addSubview(self.closeButton)
+        self.view.addSubview(self.titleTextfield)
+        self.view.addSubview(self.separatorLineView)
         self.view.addSubview(self.creditCardForm)
         self.view.addSubview(self.paymentTextField)
         self.view.addSubview(self.saveButton)
@@ -30,6 +32,12 @@ extension AddCardViewController {
         self.saveButton.layer.cornerRadius = 22
         self.saveButton.setTitleColor(UIColor.moni_pink(), for: .normal)
         self.saveButton.addTarget(self, action: #selector(saveButtonDidPress), for: .touchUpInside)
+        
+        self.titleTextfield.backgroundColor = UIColor.clear
+        self.titleTextfield.textColor = UIColor.white
+        self.titleTextfield.font = UIFont.moni_black(16)
+        
+        self.separatorLineView.backgroundColor = UIColor.white
         
         self.paymentTextField.frame = CGRect(x: 15, y: 199, width: self.view.frame.size.width - 30, height: 44)
         self.paymentTextField.translatesAutoresizingMaskIntoConstraints = false
@@ -59,8 +67,21 @@ extension AddCardViewController {
             maker.top.equalToSuperview().offset(40)
         }
         
-        self.creditCardForm.snp.makeConstraints { (maker) in
+        self.titleTextfield.snp.makeConstraints { (maker) in
             maker.top.equalTo(self.titleLabel.snp.bottom).offset(20)
+            maker.left.equalTo(self.creditCardForm.snp.left)
+            maker.right.equalTo(self.creditCardForm.snp.right)
+        }
+        
+        self.separatorLineView.snp.makeConstraints { (maker) in
+            maker.top.equalTo(self.titleTextfield.snp.bottom).offset(8)
+            maker.left.equalTo(self.creditCardForm.snp.left)
+            maker.height.equalTo(2)
+            maker.right.equalTo(self.creditCardForm.snp.right)
+        }
+        
+        self.creditCardForm.snp.makeConstraints { (maker) in
+            maker.top.equalTo(self.separatorLineView.snp.bottom).offset(20)
             maker.width.equalTo(260)
             maker.height.equalTo(140)
             maker.centerX.equalToSuperview()
