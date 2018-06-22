@@ -14,9 +14,16 @@ import ionicons
 extension CardsViewController {
     
     func setupUI() {
+        
+        
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
+        layout.itemSize = CGSize(width: self.view.frame.size.width, height: 120)
+        collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
+        
+        self.view.addSubview(self.collectionView)
         self.view.addSubview(self.addButton)
         self.view.addSubview(self.titleLabel)
-        self.view.addSubview(self.collectionView)
         
         self.view.backgroundColor = UIColor.moni_pink()
         

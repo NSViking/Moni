@@ -10,5 +10,6 @@ target 'Moni' do
     pod 'Fabric'
     pod 'Stripe'
     pod 'CreditCardForm'
+    pod 'RealmSwift'
 end
 

@@ -3,6 +3,11 @@ PODS:
   - CreditCardForm (0.1.7)
   - Fabric (1.7.6)
   - ionicons (2.1.1)
+  - Realm (3.5.0):
+    - Realm/Headers (= 3.5.0)
+  - Realm/Headers (3.5.0)
+  - RealmSwift (3.5.0):
+    - Realm (= 3.5.0)
   - SnapKit (4.0.0)
   - Stripe (13.0.0)
 
@@ -11,6 +16,7 @@ DEPENDENCIES:
   - CreditCardForm
   - Fabric
   - ionicons
+  - RealmSwift
   - SnapKit (~> 4.0.0)
   - Stripe
 
@@ -20,6 +26,8 @@ SPEC REPOS:
     - CreditCardForm
     - Fabric
     - ionicons
+    - Realm
+    - RealmSwift
     - SnapKit
     - Stripe
 
@@ -28,9 +36,11 @@ SPEC CHECKSUMS:
   CreditCardForm: 66f0ce5a12182000a457d56f5630049efd3432df
   Fabric: f8d42c893bb187326a7968b62abe55c36a987a46
   ionicons: 630bcd2c2970741c3359e3a35ad544e71d3c086b
+  Realm: 0378021c424e4e2bd6a0e63b27881e929d9b9ad1
+  RealmSwift: 3322562622fda2ad596985ead4d8d8be30cf838c
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   Stripe: 542f2c4493ce31a99fa041fe4973206e8c868f29
 
-PODFILE CHECKSUM: 5707b99ac5441131af99457611c71227e10a0e68
+PODFILE CHECKSUM: 6c2ac4f32f11fcff861d62ec77723234aa03ee3e
 
 COCOAPODS: 1.5.2

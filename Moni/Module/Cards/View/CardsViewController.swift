@@ -14,7 +14,7 @@ class CardsViewController: UIViewController {
     
     var presenter: CardsPresenterContract?
     
-    var collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
+    var collectionView: UICollectionView!
     var titleLabel = UILabel()
     var addButton = UIButton()
     
@@ -27,13 +27,14 @@ class CardsViewController: UIViewController {
         setupData()
     }
     
-    func setupData()
-    {
+    func setupData() {
         self.collectionView.register(CardCollectionViewCell.self, forCellWithReuseIdentifier: CardCollectionViewCell.identifier())
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
         
         self.titleLabel.text = "My Cards"
+        
+        self.presenter?.setupData()
     }
 }
 
@@ -43,7 +44,7 @@ extension CardsViewController: UICollectionViewDelegateFlowLayout
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize
     {
-        return CGSize(width: self.view.frame.size.width, height: 100)
+        return CGSize(width: self.view.frame.size.width, height: 200)
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -74,7 +75,7 @@ extension CardsViewController: UICollectionViewDelegate
     {
         let cardK: Card = self.dataSource[indexPath.row]
         
-        self.presenter?.joinWithCard()
+        self.presenter?.joinWithCard(card: cardK)
     }
 }
 
@@ -86,13 +87,17 @@ extension CardsViewController: UICollectionViewDataSource
         let cardK: Card = self.dataSource[indexPath.row]
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CardCollectionViewCell.identifier(), for: indexPath) as! CardCollectionViewCell
-        
+        cell.configure(card: cardK)
         return cell
     }
 }
 
 extension CardsViewController: CardsViewContract {
-    
+
+    func renderAllCards(cards: [Card]) {
+        self.dataSource = cards
+        self.collectionView.reloadData()
+    }
 }
 
 extension CardsViewController {

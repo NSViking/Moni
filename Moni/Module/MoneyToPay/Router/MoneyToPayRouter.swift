@@ -19,6 +19,6 @@ class MoneyToPayRouter: NSObject {
 extension MoneyToPayRouter: MoneyToPayRouterContract {
     
     func goBack() {
-        
+        self.viewController.dismiss(animated: true, completion: nil)
     }
 }

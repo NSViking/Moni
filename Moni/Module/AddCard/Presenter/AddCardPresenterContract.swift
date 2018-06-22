@@ -9,6 +9,6 @@
 import Foundation
 
 protocol AddCardPresenterContract {
-    func saveCard()
+    func saveCard(name: String, number: String, month: String, year: String, cvv: String)
     func goBack()
 }

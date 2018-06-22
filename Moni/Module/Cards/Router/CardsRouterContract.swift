@@ -10,6 +10,6 @@ import Foundation
 
 protocol CardsRouterContract {
     func addCard()
-    func joinWithCard()
+    func joinWithCard(card: Card)
     func goToEditCard()
 }

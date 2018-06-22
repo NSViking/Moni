@@ -10,11 +10,16 @@ import Foundation
 
 class CardsInteractor: NSObject {
     
+    var repo: CardsRepository
+    
+    init(repo: CardsRepository) {
+        self.repo = repo
+    }
 }
 
 extension CardsInteractor: CardsInteractorContract {
     
-    func getAllCards() {
-        
+    func getAllCards() -> [Card] {
+        return self.repo.getAllCards()
     }
 }

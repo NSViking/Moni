@@ -9,8 +9,8 @@
 import Foundation
 
 protocol CardsPresenterContract {
-    func getAllCards()
+    func setupData()
     func goToEditCard()
     func addNewCard()
-    func joinWithCard()
+    func joinWithCard(card: Card)
 }

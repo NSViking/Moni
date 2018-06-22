@@ -24,7 +24,8 @@ extension AddCardConfigurator {
     class func configure(_ viewController: AddCardViewController) {
         
         let router = AddCardRouter(viewController: viewController)
-        let interactor = AddCardInteractor()
+        let repo = CardsRepository()
+        let interactor = AddCardInteractor(repo: repo)
         let presenter = AddCardPresenter(interactor: interactor, view: viewController, router: router)
         
         viewController.presenter = presenter

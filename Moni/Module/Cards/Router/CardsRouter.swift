@@ -24,8 +24,9 @@ extension CardsRouter: CardsRouterContract {
         self.viewController.present(addCardVC, animated: true, completion: nil)
     }
     
-    func joinWithCard() {
-        
+    func joinWithCard(card: Card) {
+        let moneyToPay = MoneyToPayConfigurator.createMoneyToPayViperStack(card: card)
+        self.viewController.present(moneyToPay, animated: true, completion: nil)
     }
     
     func goToEditCard() {

@@ -48,5 +48,12 @@
 		<string>SFCompactText-Light.otf</string>
 		<string>SFCompactText-Regular.otf</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict/>
+	</dict>
 </dict>
 </plist>

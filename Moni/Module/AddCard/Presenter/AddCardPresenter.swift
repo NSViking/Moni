@@ -27,8 +27,9 @@ class AddCardPresenter: NSObject {
 
 extension AddCardPresenter: AddCardPresenterContract {
     
-    func saveCard() {
-        
+    func saveCard(name: String, number: String, month: String, year: String, cvv: String) {
+        let card = Card(title: name, number: number, month: month, year: year, cvv: cvv)
+        self.interactor.saveCard(card: card)
     }
     
     func goBack() {

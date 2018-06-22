@@ -25,10 +25,12 @@ class AddCardViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         setupAutolayout()
+        setupData()
     }
     
     func setupData() {
         self.titleLabel.text = "Add Card"
+        self.saveButton.isEnabled = false
     }
 }
 
@@ -36,6 +38,10 @@ extension AddCardViewController: STPPaymentCardTextFieldDelegate
 {
     func paymentCardTextFieldDidChange(_ textField: STPPaymentCardTextField) {
         creditCardForm.paymentCardTextFieldDidChange(cardNumber: textField.cardNumber, expirationYear: textField.expirationYear, expirationMonth: textField.expirationMonth, cvc: textField.cvc)
+        
+        if textField.cardNumber != "" && textField.expirationYear != 0 && textField.expirationMonth != 0 && textField.cvc != "" {
+            self.saveButton.isEnabled = true
+        }
         
     }
     
@@ -63,6 +69,18 @@ extension AddCardViewController {
     }
     
     @objc func saveButtonDidPress() {
+        
+        let month = "\(self.paymentTextField.expirationMonth)"
+        let year = "\(self.paymentTextField.expirationYear)"
+        guard let cardNumber = self.paymentTextField.cardNumber else {
+            return
+        }
+        guard let cvc = self.paymentTextField.cvc else {
+            return
+        }
+        
+        self.presenter?.saveCard(name: "", number: cardNumber, month: month, year: year, cvv: cvc)
+        
         self.presenter?.goBack()
     }
 }

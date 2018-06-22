@@ -25,7 +25,7 @@ extension AddCardViewController {
         self.closeButton.addTarget(self, action: #selector(closeButtonDidPress), for: .touchUpInside)
         
         self.saveButton.setTitle("SAVE", for: .normal)
-        self.saveButton.backgroundColor = UIColor.white
+        self.saveButton.setBackgroundImage(UIImage(color: UIColor.white), for: .normal)
         self.saveButton.layer.masksToBounds = true
         self.saveButton.layer.cornerRadius = 22
         self.saveButton.setTitleColor(UIColor.moni_pink(), for: .normal)
@@ -34,6 +34,8 @@ extension AddCardViewController {
         self.paymentTextField.frame = CGRect(x: 15, y: 199, width: self.view.frame.size.width - 30, height: 44)
         self.paymentTextField.translatesAutoresizingMaskIntoConstraints = false
         self.paymentTextField.borderWidth = 0
+        self.paymentTextField.textColor = UIColor.white
+        self.paymentTextField.placeholderColor = UIColor.white.withAlphaComponent(0.4)
         
         let border = CALayer()
         let width = CGFloat(1.0)

@@ -9,5 +9,13 @@
 import Foundation
 
 protocol MoneyToPayPresenterContract {
-    func getCard()
+    func getCardNumbersFirst() -> String
+    func getCardNumbersSecond() -> String
+    func getCardNumbersThird() -> String
+    func getCardNumbersFourth() -> String
+    func getCardMonth() -> String
+    func getCardYear() -> String
+    func getCardCVC() -> String
+    
+    func goBack()
 }

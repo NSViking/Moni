@@ -9,5 +9,5 @@
 import Foundation
 
 protocol AddCardInteractorContract {
-    func saveCard()
+    func saveCard(card: Card)
 }

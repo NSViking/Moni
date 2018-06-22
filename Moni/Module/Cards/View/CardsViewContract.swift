@@ -9,5 +9,5 @@
 import Foundation
 
 protocol CardsViewContract {
-    
+    func renderAllCards(cards: [Card])
 }

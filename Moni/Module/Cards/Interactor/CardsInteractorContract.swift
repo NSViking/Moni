@@ -9,5 +9,5 @@
 import Foundation
 
 protocol CardsInteractorContract {
-    func getAllCards()
+    func getAllCards() -> [Card]
 }

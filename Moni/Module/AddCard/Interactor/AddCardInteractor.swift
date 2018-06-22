@@ -10,11 +10,16 @@ import Foundation
 
 class AddCardInteractor: NSObject {
     
+    var repo: CardsRepository
+    
+    init(repo: CardsRepository) {
+        self.repo = repo
+    }
 }
 
 extension AddCardInteractor: AddCardInteractorContract {
     
-    func saveCard() {
-        
+    func saveCard(card: Card) {
+        self.repo.saveCard(card: card)
     }
 }

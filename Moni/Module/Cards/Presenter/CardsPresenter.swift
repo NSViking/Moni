@@ -13,7 +13,7 @@ class CardsPresenter: NSObject {
     var router: CardsRouterContract
     var interactor: CardsInteractorContract
     var view: CardsViewContract
-    var dataSource: [String]
+    var dataSource: [Card]
     
     init(interactor: CardsInteractorContract,
          view: CardsViewContract,
@@ -27,16 +27,17 @@ class CardsPresenter: NSObject {
 
 extension CardsPresenter: CardsPresenterContract {
     
-    func getAllCards() {
-        
+    func setupData() {
+        dataSource = self.interactor.getAllCards()
+        self.view.renderAllCards(cards: dataSource)
     }
     
     func goToEditCard() {
         
     }
     
-    func joinWithCard() {
-        
+    func joinWithCard(card: Card) {
+        self.router.joinWithCard(card: card)
     }
     
     func addNewCard() {

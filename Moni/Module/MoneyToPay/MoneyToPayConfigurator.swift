@@ -8,24 +8,24 @@
 
 import Foundation
 
-class MoenyToPayConfigurator: NSObject {
+class MoneyToPayConfigurator: NSObject {
     
-    class func createMoneyToPayViperStack() -> MoneyToPayViewController {
+    class func createMoneyToPayViperStack(card: Card) -> MoneyToPayViewController {
         
         let cardsVC = MoneyToPayViewController()
-        configure(cardsVC)
+        configure(cardsVC, card: card)
         
         return cardsVC
     }
 }
 
-extension MoenyToPayConfigurator {
+extension MoneyToPayConfigurator {
     
-    class func configure(_ viewController: MoneyToPayViewController) {
+    class func configure(_ viewController: MoneyToPayViewController, card: Card) {
         
         let router = MoneyToPayRouter(viewController: viewController)
         let interactor = MoneyToPayInteractor()
-        let presenter = MoneyToPayPresenter(interactor: interactor, view: viewController, router: router)
+        let presenter = MoneyToPayPresenter(interactor: interactor, view: viewController, router: router, card: card)
         
         viewController.presenter = presenter
     }

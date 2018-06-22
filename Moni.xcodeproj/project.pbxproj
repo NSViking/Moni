@@ -49,6 +49,8 @@
 		2D1975F720D87DE1005512BD /* MoneyToPayViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975F620D87DE1005512BD /* MoneyToPayViewContract.swift */; };
 		2D1975FB20D87F24005512BD /* RootPresenterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975FA20D87F24005512BD /* RootPresenterContract.swift */; };
 		2D1975FD20D87F2C005512BD /* RootPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1975FC20D87F2C005512BD /* RootPresenter.swift */; };
+		2D64B10720DC33770033880A /* CardsRepositoryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64B10620DC33770033880A /* CardsRepositoryContract.swift */; };
+		2D64B10920DC39810033880A /* UIImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64B10820DC39810033880A /* UIImages.swift */; };
 		2D6C3E2F20D9A0880047113F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6C3E2C20D9A0870047113F /* Colors.swift */; };
 		2D6C3E3020D9A0880047113F /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6C3E2D20D9A0870047113F /* Views.swift */; };
 		2D6C3E3120D9A0880047113F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6C3E2E20D9A0880047113F /* Fonts.swift */; };
@@ -143,6 +145,8 @@
 		2D1975F620D87DE1005512BD /* MoneyToPayViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyToPayViewContract.swift; sourceTree = "<group>"; };
 		2D1975FA20D87F24005512BD /* RootPresenterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresenterContract.swift; sourceTree = "<group>"; };
 		2D1975FC20D87F2C005512BD /* RootPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresenter.swift; sourceTree = "<group>"; };
+		2D64B10620DC33770033880A /* CardsRepositoryContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsRepositoryContract.swift; sourceTree = "<group>"; };
+		2D64B10820DC39810033880A /* UIImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImages.swift; sourceTree = "<group>"; };
 		2D6C3E2C20D9A0870047113F /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		2D6C3E2D20D9A0870047113F /* Views.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
 		2D6C3E2E20D9A0880047113F /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
@@ -351,6 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				2D1975AB20D865FD005512BD /* CardsRepository.swift */,
+				2D64B10620DC33770033880A /* CardsRepositoryContract.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -479,6 +484,7 @@
 		2D6C3E2B20D9A06D0047113F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2D64B10820DC39810033880A /* UIImages.swift */,
 				2D6C3E2C20D9A0870047113F /* Colors.swift */,
 				2D6C3E2E20D9A0880047113F /* Fonts.swift */,
 				2D6C3E2D20D9A0870047113F /* Views.swift */,
@@ -688,6 +694,8 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Moni/Pods-Moni-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CreditCardForm/CreditCardForm.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
 				"${BUILT_PRODUCTS_DIR}/ionicons/ionicons.framework",
@@ -695,6 +703,8 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CreditCardForm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ionicons.framework",
@@ -755,12 +765,14 @@
 				2D1975B720D86660005512BD /* CardsViewController+Layout.swift in Sources */,
 				2D1975DD20D8676B005512BD /* AddCardViewController.swift in Sources */,
 				2D1975D220D866F4005512BD /* MoneyToPayPresenterContract.swift in Sources */,
+				2D64B10720DC33770033880A /* CardsRepositoryContract.swift in Sources */,
 				2D1975B920D8666C005512BD /* CardsPresenter.swift in Sources */,
 				2D1975E720D8679A005512BD /* AddCardInteractorContract.swift in Sources */,
 				2D1975C320D8669B005512BD /* CardsRouterContract.swift in Sources */,
 				2D6C3E3120D9A0880047113F /* Fonts.swift in Sources */,
 				2D6C3E2F20D9A0880047113F /* Colors.swift in Sources */,
 				2D1975E120D8677D005512BD /* AddCardPresenter.swift in Sources */,
+				2D64B10920DC39810033880A /* UIImages.swift in Sources */,
 				2D1975F520D87C34005512BD /* AddCardViewContract.swift in Sources */,
 				2D1975FB20D87F24005512BD /* RootPresenterContract.swift in Sources */,
 				2D1975FD20D87F2C005512BD /* RootPresenter.swift in Sources */,
