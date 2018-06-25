@@ -35,9 +35,9 @@ class CardCollectionViewCell: UICollectionViewCell {
         self.addSubview(cardView)
         
         cardTitle.font = UIFont.moni_bold(16)
-        cardTitle.textColor = UIColor.white
+        cardTitle.textColor = UIColor.moni_pink()
         cardTitle.numberOfLines = 0
-        cardTitle.textAlignment = .center
+        cardTitle.textAlignment = .left
         
         containerView.backgroundColor = UIColor.clear
     }
@@ -52,8 +52,8 @@ class CardCollectionViewCell: UICollectionViewCell {
         
         self.cardTitle.snp.makeConstraints { (maker) in
             maker.top.equalToSuperview().offset(12)
-            maker.left.equalToSuperview().offset(8)
-            maker.right.equalToSuperview().offset(-8)
+            maker.left.equalTo(self.cardView.snp.left)
+            maker.right.equalTo(self.cardView.snp.right)
         }
         
         self.cardView.snp.makeConstraints { (maker) in
@@ -70,7 +70,9 @@ class CardCollectionViewCell: UICollectionViewCell {
         let year = Int(card.year)
         let month = Int(card.month)
         
-        self.cardView.paymentCardTextFieldDidChange(cardNumber: card.number, expirationYear: UInt(bitPattern: year!), expirationMonth: UInt(bitPattern: month!), cvc: card.cvv)
+        let number = card.number
+        
+        self.cardView.paymentCardTextFieldDidChange(cardNumber: number, expirationYear: UInt(bitPattern: year!), expirationMonth: UInt(bitPattern: month!), cvc: card.cvv)
         self.cardView.paymentCardTextFieldDidEndEditingExpiration(expirationYear: UInt(bitPattern: year!))
         self.cardView.paymentCardTextFieldDidBeginEditingCVC()
         self.cardView.paymentCardTextFieldDidEndEditingCVC()

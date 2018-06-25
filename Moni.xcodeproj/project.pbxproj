@@ -76,6 +76,7 @@
 		2D6C3E5B20D9A0B20047113F /* SFCompactText-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D6C3E4620D9A0B20047113F /* SFCompactText-Heavy.otf */; };
 		2D6C3E5C20D9A0B20047113F /* SFCompactText-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D6C3E4720D9A0B20047113F /* SFCompactText-SemiboldItalic.otf */; };
 		2D6C3E5F20D9A1F10047113F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6C3E5E20D9A1F10047113F /* Card.swift */; };
+		2DDE554520E1B1B0005ED7FD /* 1024Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DDE554420E1B1AF005ED7FD /* 1024Icon.png */; };
 		CC04F47D6FE2F6714A18E9BD /* Pods_Moni.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 663248890929A281B7332E7F /* Pods_Moni.framework */; };
 /* End PBXBuildFile section */
 
@@ -172,6 +173,7 @@
 		2D6C3E4620D9A0B20047113F /* SFCompactText-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-Heavy.otf"; sourceTree = "<group>"; };
 		2D6C3E4720D9A0B20047113F /* SFCompactText-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-SemiboldItalic.otf"; sourceTree = "<group>"; };
 		2D6C3E5E20D9A1F10047113F /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		2DDE554420E1B1AF005ED7FD /* 1024Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1024Icon.png; sourceTree = "<group>"; };
 		663248890929A281B7332E7F /* Pods_Moni.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moni.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB997935F3EDE3162BC31136 /* Pods-Moni.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moni.release.xcconfig"; path = "Pods/Target Support Files/Pods-Moni/Pods-Moni.release.xcconfig"; sourceTree = "<group>"; };
 		ECF3B01C7BC6459B899E241F /* Pods-Moni.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moni.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Moni/Pods-Moni.debug.xcconfig"; sourceTree = "<group>"; };
@@ -400,6 +402,7 @@
 		2D1975B120D86624005512BD /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				2DDE554420E1B1AF005ED7FD /* 1024Icon.png */,
 				2D19757B20D86483005512BD /* Assets.xcassets */,
 				2D19757D20D86483005512BD /* LaunchScreen.storyboard */,
 				2D19758020D86483005512BD /* Info.plist */,
@@ -666,6 +669,7 @@
 				2D6C3E4B20D9A0B20047113F /* SFCompactDisplay-Black.otf in Resources */,
 				2D19757C20D86483005512BD /* Assets.xcassets in Resources */,
 				2D6C3E4820D9A0B20047113F /* SFCompactDisplay-Semibold.otf in Resources */,
+				2DDE554520E1B1B0005ED7FD /* 1024Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,7 +13,7 @@ import ionicons
 extension AddCardViewController {
     
     func setupUI() {
-        self.view.backgroundColor = UIColor.moni_pink()
+        self.view.backgroundColor = UIColor.white
         
         self.view.addSubview(self.titleLabel)
         self.view.addSubview(self.closeButton)
@@ -23,27 +23,27 @@ extension AddCardViewController {
         self.view.addSubview(self.paymentTextField)
         self.view.addSubview(self.saveButton)
         
-        self.closeButton.setImage(IonIcons.image(withIcon: ion_close_circled, size: 35, color: UIColor.white), for: .normal)
+        self.closeButton.setImage(IonIcons.image(withIcon: ion_close_circled, size: 35, color: UIColor.moni_pink()), for: .normal)
         self.closeButton.addTarget(self, action: #selector(closeButtonDidPress), for: .touchUpInside)
         
         self.saveButton.setTitle("SAVE", for: .normal)
-        self.saveButton.setBackgroundImage(UIImage(color: UIColor.white), for: .normal)
+        self.saveButton.setBackgroundImage(UIImage(color: UIColor.moni_pink()), for: .normal)
         self.saveButton.layer.masksToBounds = true
         self.saveButton.layer.cornerRadius = 22
-        self.saveButton.setTitleColor(UIColor.moni_pink(), for: .normal)
+        self.saveButton.setTitleColor(UIColor.white, for: .normal)
         self.saveButton.addTarget(self, action: #selector(saveButtonDidPress), for: .touchUpInside)
         
         self.titleTextfield.backgroundColor = UIColor.clear
-        self.titleTextfield.textColor = UIColor.white
+        self.titleTextfield.textColor = UIColor.moni_pink()
         self.titleTextfield.font = UIFont.moni_black(16)
         
-        self.separatorLineView.backgroundColor = UIColor.white
+        self.separatorLineView.backgroundColor = UIColor.moni_pink()
         
         self.paymentTextField.frame = CGRect(x: 15, y: 199, width: self.view.frame.size.width - 30, height: 44)
         self.paymentTextField.translatesAutoresizingMaskIntoConstraints = false
         self.paymentTextField.borderWidth = 0
-        self.paymentTextField.textColor = UIColor.white
-        self.paymentTextField.placeholderColor = UIColor.white.withAlphaComponent(0.4)
+        self.paymentTextField.textColor = UIColor.moni_pink()
+        self.paymentTextField.placeholderColor = UIColor.moni_pink().withAlphaComponent(0.4)
         
         let border = CALayer()
         let width = CGFloat(1.0)
@@ -55,7 +55,7 @@ extension AddCardViewController {
         
         self.paymentTextField.delegate = self
         
-        self.titleLabel.textColor = UIColor.white
+        self.titleLabel.textColor = UIColor.moni_pink()
         self.titleLabel.font = UIFont.moni_bold(36)
         self.titleLabel.numberOfLines = 0
     }

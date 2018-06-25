@@ -18,6 +18,9 @@ class CardsViewController: UIViewController {
     var titleLabel = UILabel()
     var addButton = UIButton()
     
+    var emptyImageView = UIImageView()
+    var emptyTitle = UILabel()
+    
     var dataSource: [Card] = []
     
     override func viewDidLoad() {
@@ -27,7 +30,7 @@ class CardsViewController: UIViewController {
         setupData()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         self.presenter?.setupData()
@@ -39,6 +42,7 @@ class CardsViewController: UIViewController {
         self.collectionView.delegate = self
         
         self.titleLabel.text = "My Cards"
+        self.emptyTitle.text = "Add a new card to access easiest to your moments and your current balance with Money To Pay."
     }
 }
 
@@ -101,6 +105,14 @@ extension CardsViewController: CardsViewContract {
     func renderAllCards(cards: [Card]) {
         self.dataSource = cards
         self.collectionView.reloadData()
+        
+        if self.dataSource.count != 0 {
+            self.emptyImageView.isHidden = true
+            self.emptyTitle.isHidden = true
+        } else {
+            self.emptyImageView.isHidden = false
+            self.emptyTitle.isHidden = false
+        }
     }
 }
 
