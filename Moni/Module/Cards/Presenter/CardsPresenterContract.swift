@@ -11,6 +11,7 @@ import Foundation
 protocol CardsPresenterContract {
     func setupData()
     func goToEditCard()
+    func removeCard(card: Card)
     func addNewCard()
     func joinWithCard(card: Card)
 }

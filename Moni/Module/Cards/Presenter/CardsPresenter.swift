@@ -43,4 +43,8 @@ extension CardsPresenter: CardsPresenterContract {
     func addNewCard() {
         self.router.addCard()
     }
+    
+    func removeCard(card: Card) {
+       self.interactor.removeCard(card: card)
+    }
 }

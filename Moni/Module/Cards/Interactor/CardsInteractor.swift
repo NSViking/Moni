@@ -22,4 +22,8 @@ extension CardsInteractor: CardsInteractorContract {
     func getAllCards() -> [Card] {
         return self.repo.getAllCards()
     }
+    
+    func removeCard(card: Card) {
+        return self.repo.deleteCard(card: card)
+    }
 }

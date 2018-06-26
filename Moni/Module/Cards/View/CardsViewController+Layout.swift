@@ -23,14 +23,39 @@ extension CardsViewController {
         
         self.view.addSubview(self.collectionView)
         self.view.addSubview(self.addButton)
+        self.view.addSubview(self.removeButton)
         self.view.addSubview(self.titleLabel)
         self.view.addSubview(self.emptyTitle)
         self.view.addSubview(self.emptyImageView)
+        self.view.addSubview(self.cancelRemoveButton)
+        self.view.addSubview(self.confirmRemoveButton)
         
         self.view.backgroundColor = UIColor.white
         
         self.addButton.setImage(IonIcons.image(withIcon: ion_android_add_circle, size: 35, color: UIColor.moni_pink()), for: .normal)
         self.addButton.addTarget(self, action: #selector(addButtonDidPress), for: .touchUpInside)
+        
+        self.removeButton.setImage(IonIcons.image(withIcon: ion_ios_trash, size: 35, color: UIColor.moni_pink()), for: .normal)
+        self.removeButton.addTarget(self, action: #selector(removeButtonDidPress), for: .touchUpInside)
+        
+        self.cancelRemoveButton.setTitle("Cancel", for: .normal)
+        self.cancelRemoveButton.addTarget(self, action: #selector(cancelRemoveButtonDidPress), for: .touchUpInside)
+        self.cancelRemoveButton.setTitleColor(UIColor.moni_pink(), for: .normal)
+        self.cancelRemoveButton.setBackgroundImage(UIImage(color: UIColor.white), for: .normal)
+        self.cancelRemoveButton.layer.cornerRadius = 20
+        self.cancelRemoveButton.layer.masksToBounds = true
+        self.cancelRemoveButton.layer.borderColor = UIColor.moni_pink().cgColor
+        self.cancelRemoveButton.layer.borderWidth = 1
+        
+        self.confirmRemoveButton.setTitle("Confirm", for: .normal)
+        self.confirmRemoveButton.addTarget(self, action: #selector(confirmRemoveButtonDidPress), for: .touchUpInside)
+        self.confirmRemoveButton.setTitleColor(UIColor.white, for: .normal)
+        self.confirmRemoveButton.setBackgroundImage(UIImage(color: UIColor.moni_pink()), for: .normal)
+        self.confirmRemoveButton.layer.cornerRadius = 20
+        self.confirmRemoveButton.layer.masksToBounds = true
+        self.cancelRemoveButton.layer.borderColor = UIColor.moni_pink().cgColor
+        self.cancelRemoveButton.layer.borderWidth = 1
+        
         
         self.titleLabel.textColor = UIColor.moni_pink()
         self.titleLabel.font = UIFont.moni_bold(36)
@@ -49,6 +74,13 @@ extension CardsViewController {
     func setupAutolayout() {
         self.addButton.snp.makeConstraints { (maker) in
             maker.right.equalToSuperview().offset(-20)
+            maker.top.equalToSuperview().offset(40)
+            maker.height.equalTo(45)
+            maker.width.equalTo(45)
+        }
+        
+        self.removeButton.snp.makeConstraints { (maker) in
+            maker.right.equalTo(self.addButton.snp.left).offset(-20)
             maker.top.equalToSuperview().offset(40)
             maker.height.equalTo(45)
             maker.width.equalTo(45)
@@ -76,6 +108,20 @@ extension CardsViewController {
             maker.top.equalTo(self.emptyImageView.snp.bottom).offset(10)
             maker.left.equalToSuperview().offset(20)
             maker.right.equalToSuperview().offset(-20)
+        }
+        
+        self.cancelRemoveButton.snp.makeConstraints { (maker) in
+            maker.bottom.equalToSuperview().offset(-12)
+            maker.left.equalToSuperview().offset(15)
+            maker.height.equalTo(45)
+        }
+        
+        self.confirmRemoveButton.snp.makeConstraints { (maker) in
+            maker.bottom.equalToSuperview().offset(-12)
+            maker.right.equalToSuperview().offset(-15)
+            maker.height.equalTo(45)
+            maker.left.equalTo(self.cancelRemoveButton.snp.right).offset(20)
+            maker.width.equalTo(self.cancelRemoveButton.snp.width)
         }
     }
 }

@@ -30,7 +30,10 @@ extension CardsRepository: CardsRepositoryContract {
     
     func deleteCard(card: Card) {
         let realm = try! Realm()
-        realm.delete(card)
+        
+        try! realm.write {
+            realm.delete(card)
+        }
     }
 }
 

@@ -17,11 +17,18 @@ class CardsViewController: UIViewController {
     var collectionView: UICollectionView!
     var titleLabel = UILabel()
     var addButton = UIButton()
+    var removeButton = UIButton()
     
     var emptyImageView = UIImageView()
     var emptyTitle = UILabel()
     
+    var confirmRemoveButton = UIButton()
+    var cancelRemoveButton = UIButton()
+    
+    var removeEnabled = false
+    
     var dataSource: [Card] = []
+    var removeDataSource:[Card] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +40,14 @@ class CardsViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.presenter?.setupData()
+//        Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(setupCards), userInfo: nil, repeats: false)
+        self.setupCards()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        cancelRemoveButtonDidPress()
     }
     
     func setupData() {
@@ -41,8 +55,15 @@ class CardsViewController: UIViewController {
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
         
+        self.cancelRemoveButton.isHidden = true
+        self.confirmRemoveButton.isHidden = true
+        
         self.titleLabel.text = "My Cards"
         self.emptyTitle.text = "Add a new card to access easiest to your moments and your current balance with Money To Pay."
+    }
+    
+    @objc func setupCards() {
+        self.presenter?.setupData()
     }
 }
 
@@ -82,8 +103,12 @@ extension CardsViewController: UICollectionViewDelegate
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
     {
         let cardK: Card = self.dataSource[indexPath.row]
-        
-        self.presenter?.joinWithCard(card: cardK)
+        if (self.removeEnabled) {
+            self.removeDataSource.append(cardK)
+            self.collectionView.reloadData()
+        } else {
+            self.presenter?.joinWithCard(card: cardK)
+        }
     }
 }
 
@@ -95,7 +120,12 @@ extension CardsViewController: UICollectionViewDataSource
         let cardK: Card = self.dataSource[indexPath.row]
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CardCollectionViewCell.identifier(), for: indexPath) as! CardCollectionViewCell
-        cell.configure(card: cardK)
+        
+        cell.configure(card: cardK, removeEnabled: self.removeEnabled, isSelected: self.removeDataSource.contains(cardK))
+        
+        cell.bulletButtonClousure = { card in
+            self.selectCardToRemove(card: card)
+        }
         return cell
     }
 }
@@ -109,9 +139,11 @@ extension CardsViewController: CardsViewContract {
         if self.dataSource.count != 0 {
             self.emptyImageView.isHidden = true
             self.emptyTitle.isHidden = true
+            self.removeButton.isHidden = false
         } else {
             self.emptyImageView.isHidden = false
             self.emptyTitle.isHidden = false
+            self.removeButton.isHidden = true
         }
     }
 }
@@ -120,5 +152,42 @@ extension CardsViewController {
     
     @objc func addButtonDidPress() {
         self.presenter?.addNewCard()
+    }
+    
+    @objc func removeButtonDidPress() {
+        self.removeEnabled = !self.removeEnabled
+        self.removeButton.isEnabled = !self.removeEnabled
+        
+        self.confirmRemoveButton.isHidden = !self.removeEnabled
+        self.cancelRemoveButton.isHidden = !self.removeEnabled
+        
+        self.removeDataSource = []
+        self.collectionView.reloadData()
+        
+    }
+    
+    func selectCardToRemove(card: Card) {
+        self.removeDataSource.append(card)
+        self.collectionView.reloadData()
+    }
+    
+    @objc func cancelRemoveButtonDidPress() {
+        self.removeDataSource = []
+        self.removeEnabled = false
+        self.removeButton.isEnabled = true
+        self.cancelRemoveButton.isHidden = true
+        self.confirmRemoveButton.isHidden = true
+        self.collectionView.reloadData()
+    }
+    
+    @objc func confirmRemoveButtonDidPress() {
+        if (self.removeDataSource.count > 0) {
+            self.dataSource.remove(at: self.dataSource.index(of: self.removeDataSource[0])!)
+            self.presenter?.removeCard(card: self.removeDataSource[0])
+            
+            self.setupCards()
+        }
+        
+        cancelRemoveButtonDidPress()
     }
 }

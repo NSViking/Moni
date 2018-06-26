@@ -10,4 +10,5 @@ import Foundation
 
 protocol CardsInteractorContract {
     func getAllCards() -> [Card]
+    func removeCard(card: Card)
 }
