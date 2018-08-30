@@ -43,7 +43,7 @@ extension MoneyToPayViewController {
     func setupData() {
         self.webView.delegate = self
         
-        guard let url = URL(string: "https://www.moneytopay.com/gestion-tarjeta-regalo") else {
+        guard let url = URL(string: "https://www.moneytopay.com/web/guest/gestion-tarjeta-regalo") else {
             return
         }
         let request = URLRequest(url: url)
